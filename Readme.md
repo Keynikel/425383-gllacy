@@ -2,7 +2,6 @@
 
 * Студент: [Ольга Басюк](https://up.htmlacademy.ru/htmlcss/19/user/425383).
 * Наставник: [Галина Борисова](https://up.htmlacademy.ru/htmlcss/19/user/235021).
-
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
