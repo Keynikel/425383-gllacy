@@ -36,6 +36,7 @@
     </header>
     <main>
       <section class="common-information">
+        <h2 class="visible-hidden">Информация для клиентов</h2>
         <div class="main-user-information">
           <div class="main-contacts">
             <p> С 10 до 20, ежедневно </p>
@@ -43,7 +44,9 @@
           </div>
         </div>
         <h1 class="visible-hidden">Интернет-магазин мороженого "Глейси"</h1>
-        <section class="slider"></section>
+        <section class="slider">
+          <h2 class="visible-hidden">Наше мороженое</h2>
+        </section>
         <p class="slider-header first">
           <b>Крем-брюле и пломбир с малиновым джемом</b>
         </p>
@@ -58,12 +61,12 @@
       <section class="spetial-offer">
         <h2 class="visible-hidden">Специальное предложение</h2>
         <div class="spetial-offer-raspberries">
-          <b>Малинка даром!</b>
+          <p class="offer-lead">Малинка даром!</p>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a href="#" class="button want-raspberies">Хочу варенье!</a>
         </div>
         <div class="spetial-offer-chocolate">
-          <b>Шоколадки даром</b>
+          <p class="offer-lead">Шоколадки даром</p>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a href="#" class="button want-chocolate">Хочу шоколадки!</a>
         </div>
@@ -95,7 +98,7 @@
       </section>
       <section class="advantages">
         <h2 class="visible-hidden">Наши преимущества</h2>
-        <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+        <p class="advantages-lead">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="advantages-list">
           <li>
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -115,7 +118,7 @@
         <h2 class="visible-hidden">Полезная информация</h2>
         <article>
           <h3> Новое в нашем блоге </h3>
-          <b> 10 способов сервировки фруктовых щербетов к столу</b>
+          <a href="#" class="more-information">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
         <div class="contact-form">
           <p>
@@ -143,13 +146,15 @@
       </section>
     </main>
     <footer class="main-footer">
-      <ul class="footer-social">
+      <ul class="footer-social-left">
         <li class="twitter">
           <a href="#">Twitter</a>
         </li>
         <li class="insta">
           <a href="#">Instagramm</a>
         </li>
+      </ul>
+      <ul class="footer-social-right">
         <li class="fb">
           <a href="#">Facebook</a>
         </li>
@@ -164,9 +169,24 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
-        <img src="images/footer-logo.jpg" width="100" height="100" alt="Логотип магазина 'Глейси'">
+        <a href="#" class="logo-href">
+          <img src="images/footer-logo.jpg" width="100" height="100" alt="Логотип магазина 'Глейси'">
+        </a>
         <p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
+    <div class="modal modal-login">
+      <div class="login-form"></div>
+      <a href="#" class="login-form-forgot">Забыли пароль?</a>
+      <a href="#" class="login-form-sin-up">Новая регистрация</a>
+    </div>
+    <div class="modal modal-search"></div>
+    <div class="modal modal-callback">
+      <h2>Мы обязательно вам ответим</h2>
+      <div class="modal-callback-form"></div>
+    </div>
+
+    </div>
+
   </body>
 </html>
