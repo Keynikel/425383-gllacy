@@ -137,13 +137,17 @@
           <h3> Новое в нашем блоге </h3>
           <a href="#" class="more-information">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
-        <div class="contact-form">
+        <div class="subscribe-form">
           <p>
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
             вкусного, что у нас происходит. Обещаем не спамить и не слать всякой
             ненужной ерунды. Честно =)
           </p>
-          <div class="form"></div>
+          <form name="subscribe" method="post" action="https://echo.htmlacademy.ru">
+            <label for="subscribe-email" class="visible-hidden">Электронная почта</label>
+            <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта" required>
+            <button type="submit" name="subscribe-submit">Отправить</button>
+          </form>
         </div>
       </section>
       <section class="map">
@@ -158,7 +162,7 @@
             <strong>8 812 450-25-25</strong> <br>
             (с 10 до 20 ежедневно)
           </p>
-          <a href="#" class="button callback-form-button">Форма обратной связи</a>
+          <button type="button" class="button callback-form-button">Форма обратной связи</button>
         </div>
       </section>
     </main>
@@ -192,15 +196,43 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
-    <div class="modal modal-login">
-      <!-- Здесь будет форма-->
+    <section class="modal modal-login">
+      <h2 class="visible-hidden">Личный кабинет</h2>
+      <form name="login" method="post" action="https://echo.htmlacademy.ru">
+        <p class="login-item">
+          <label for="login-email" class="visible-hidden">Электронная почта</label>
+          <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
+        </p>
+        <p class="login-item">
+          <label for="login-password" class="visible-hidden">Пароль</label>
+          <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
       <a href="#" class="login-form-forgot">Забыли пароль?</a>
       <a href="#" class="login-form-sin-up">Новая регистрация</a>
-    </div>
-    <div class="modal modal-search"><!-- Здесь будет форма--></div>
-    <div class="modal modal-callback">
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-search">
+        <h2 class="visible-hidden">Поиск</h2>
+        <form name="search" method="post" action="https://echo.htmlacademy.ru">
+          <input type="search" name="search-text" placeholder="Что ищем?" aria-label="Поиск по сайту">
+        </form>
+    </section>
+    <section class="modal modal-callback">
       <h2>Мы обязательно вам ответим</h2>
-      <!-- Здесь будет форма-->
-    </div>
+      <form name="callback" method="post" action="https://echo.htmlacademy.ru">
+        <p class="callback-item">
+          <label for="callback-name" class="visible-hidden">Как вас зовут?</label>
+          <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?">
+        </p>
+        <p class="callback-item">
+          <label for="callback-email"> Ваша почта для ответа?</label>
+          <input type="email" name="callback-email" id="callback-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <textarea name="callnack-message" rows="8" cols="80">Напишите что-нибудь...</textarea>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
