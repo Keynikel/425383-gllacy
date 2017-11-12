@@ -76,19 +76,19 @@
         <h2>Фильтры поиска</h2>
         <form name="filters" method="post" action="https://echo.htmlacademy.ru">
           <div class="filters-first-row">
-            <label for="filters-sorting">
-              Сортировка
-            </label>
-            <select class="filters-sorting" id="filters-sorting" name="filters-sorting">
-              <option value="popularity">по популярности</option>
-              <option value="cheaper-first">сначала недорогие</option>
-              <option value="expensive-first">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
-
-            <label for="filters-price">Цена: 100руб. - 500руб.</label>
-            <input type="range" class="filters-price" id="filters-price" name="filters-price" min="100" max="500">
-
+            <fieldset>
+              <legend>Сортировка</legend>
+              <select class="filters-sorting" id="filters-sorting" name="filters-sorting">
+                <option value="popularity">по популярности</option>
+                <option value="cheaper-first">сначала недорогие</option>
+                <option value="expensive-first">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Цена: 100руб. - 500руб.</legend>
+              <input type="range" class="filters-price" id="filters-price" name="filters-price" min="100" max="500">
+            </fieldset>
             <fieldset>
               <legend>Жирность</legend>
               <input type="radio" id="fat-0" name="filters-fat" value="0">
@@ -110,8 +110,8 @@
               <input type="checkbox" id="fillers-chocolate" name="filters-fillers" value="chocolate">
               <label for="fillers-chocolate">шоколадные</label>
 
-              <input type="checkbox" id="fillters-shugar" name="filters-fillers" value="shugar">
-              <label for="fillters-shugar">сахарные присыпки</label>
+              <input type="checkbox" id="fillers-shugar" name="filters-fillers" value="shugar">
+              <label for="fillers-shugar">сахарные присыпки</label>
 
               <input type="checkbox" id="fillers-fruit" name="filters-fillers" value="fruit">
               <label for="fillers-fruit">фрукты</label>
@@ -260,7 +260,7 @@
       <table>
         <thead>
           <tr>
-            <td class="visible-hidden">Удалить</th>
+            <td class="visible-hidden">Удалить</td>
             <td class="visible-hidden">Изображение товара</td>
             <td class="visible-hidden">Название</td>
             <td class="visible-hidden">Вес и стоимость</td>
@@ -269,14 +269,14 @@
         </thead>
         <tbody>
           <tr>
-            <td class="close"><button class="modal-close" type="button">Закрыть</button></td>
+            <td class="close"><button class="modal-close" type="button">Удалить</button></td>
             <td class="item-image"><img src="img/orange.jpg" width="33" height="33" alt="Сливочное мороженое"></td>
             <td class="item-name">Пломбир с апельсиновым джемом</td>
             <td class="item-weight-price">1.5 кг x <span class="item-price">200 руб</span></td>
             <td class="item-cost">300 руб</td>
           </tr>
           <tr>
-            <td class="close"><button class="modal-close" type="button">Закрыть</button></td>
+            <td class="close"><button class="modal-close" type="button">Удалить</button></td>
             <td class="item-image"><img src="img/strawberry.jpg" width="33" height="33" alt="Сливочно-клубничное мороженое"></td>
             <td class="item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
             <td class="item-weight-price">1.5 кг x <span class="item-price">300 руб</span></td>
@@ -286,7 +286,7 @@
           </tr>
         </tbody>
       </table>
-      <button class="button cart-order-button" type="button">Оформить заказ</button>
+      <a class="button cart-order-button" href="#">Оформить заказ</a>
     </section>
   </body>
 </html>
