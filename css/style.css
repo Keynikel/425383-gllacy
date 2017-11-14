@@ -1,0 +1,176 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #849c8f;
+}
+
+a{
+  text-decoration: none;
+  border-bottom: 1px solid #adbdb4;
+}
+
+.visible-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-navigation{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.site-navigation,
+.site-navigation-subnavigation,
+.user-navigation{
+  list-style: none;
+}
+
+.site-navigation a,
+.site-navigation-subnavigation a,
+.user-navigation a{
+  color: #ffffff;
+}
+
+.site-navigation a:focus,
+.site-navigation-subnavigation a:focus,
+.user-navigation a:focus{
+  outline: none;
+}
+
+.site-navigation a:hover,
+.site-navigation-subnavigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation-subnavigation a:focus,
+.user-navigation a:focus,
+.site-navigation a:active,
+.site-navigation-subnavigation a:active,
+.user-navigation a:active{
+  color: #ffbc9e;
+
+  border-bottom-color: #ffbc9e;
+}
+
+.main-user-information{
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-user-information a{
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.slider-header{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.button:hover,
+.button:active{
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 0px 0px rgba(172, 16, 0, 1);
+}
+
+.button:active{
+  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}
+
+
+
+
+.button.give-both{
+  font-size: 32px;
+  line-height: 44px;
+}
+
+
+.slider-switchers{
+  list-style: none;
+}
+
+
+.spetial-offer-raspberries{
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+
+  background-color: #b20026;
+  background-image: url("../img/raspberries.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spetial-offer-raspberries .offer-lead{
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.spetial-offer-chocolate{
+  font-size: 18px;
+  line-height: 22px;
+
+  background-color: #b20026;
+  background-image: url("../img/chocolate.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spetial-offer-chocolate .offer-lead{
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.best-offers{
+  list-style: none;
+}
+
+.best-offers .price{
+  font-size: 45px;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.best-offers .weight{
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.best-offers .description a{
+  color: #ffffff;
+}
