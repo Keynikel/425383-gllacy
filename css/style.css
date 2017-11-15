@@ -140,10 +140,6 @@ a{
 }
 
 .button{
-  margin: 30px;
-  padding: 15px;
-  border-radius: 30px;
-
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -226,37 +222,37 @@ a{
   line-height: 41px;
 }
 
-.best-offers{
+.catalog{
   list-style: none;
 }
 
-.best-offers .price{
+.catalog .price{
   font-size: 45px;
   line-height: 45px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.best-offers .weight{
+.catalog .weight{
   font-size: 30px;
   line-height: 45px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.best-offers .description a{
+.catalog .description a{
   color: #ffffff;
 
   border-bottom: 1px solid #adbdb4;
 }
 
-.best-offers .description a:hover,
-.best-offers .description a:focus,
-.best-offers .description a:active{
+.catalog .description a:hover,
+.catalog .description a:focus,
+.catalog .description a:active{
   color: #ffbc9e;
 
   border-bottom-color: #ffbc9e;
 }
 
-.best-offers .description a:focus{
+.catalog .description a:focus{
   outline: none;
 }
 
