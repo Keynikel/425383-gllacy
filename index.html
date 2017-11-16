@@ -115,21 +115,25 @@
             <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="price">310 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
           <li class="ice-cream-card">
             <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <p class="price">380 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
           <li class="ice-cream-card">
             <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p class="price">355 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
           <li class="ice-cream-card">
             <img src="img/cream-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <p class="price">415 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
         </ul>
       </section>
@@ -227,7 +231,7 @@
           <label for="login-password" class="visible-hidden">Пароль</label>
           <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
         </p>
-        <button type="submit">Войти</button>
+        <button class="button" type="submit">Войти</button>
       </form>
       <a href="#" class="login-form-forgot">Забыли пароль?</a>
       <a href="#" class="login-form-sin-up">Новая регистрация</a>
@@ -246,10 +250,11 @@
           <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?">
         </p>
         <p class="callback-item">
-          <label for="callback-email"> Ваша почта для ответа?</label>
+          <label for="callback-email" class="visible-hidden"> Ваша почта для ответа?</label>
           <input type="email" name="callback-email" id="callback-email" placeholder="Ваша почта для ответа?">
         </p>
-        <textarea name="callnack-message" rows="8" cols="80">Напишите что-нибудь...</textarea>
+        <textarea name="callnack-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>

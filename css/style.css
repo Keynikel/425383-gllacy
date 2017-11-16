@@ -91,16 +91,18 @@ a{
 }
 
 .site-navigation-subnavigation .active a{
-  background-color: #d07058;
+  background-color: rgb(208, 112, 88);
 }
 
 .site-navigation-subnavigation a:hover,
 .site-navigation-subnavigation a:focus{
-  background-color: #fbded7;
+  background-color: rgba(208, 112, 88, 0.2);
+
 }
 
 .site-navigation-subnavigation a:active{
-  background-color: #f6b5a5;
+  background-color: rgba(208, 112, 88, 0.5);
+
 }
 
 /* стили пользовательского меню */
@@ -130,6 +132,12 @@ a{
   font-size: 22px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.main-user-information a:hover,
+.main-user-information a:focus,
+.main-user-information a:active{
+  color: #ffbc9e;
 }
 
 .slider-header{
@@ -229,6 +237,7 @@ a{
 .catalog .price{
   font-size: 45px;
   line-height: 45px;
+  font-weight: bold;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -269,6 +278,7 @@ a{
 .advantages-lead{
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold
 }
 
 .advantages-list{
@@ -382,4 +392,64 @@ a.copyright.active{
   color: #ffbc9e;
 
   border-bottom-color: #ffbc9e;
+}
+
+.modal-login input,
+.modal-search input,
+.modal-callback input,
+.modal-callback textarea{
+  font: inherit;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.modal-login input:focus,
+.modal-search input:focus,
+.modal-callback input:focus,
+.modal-callback textarea:focus{
+  border: 2px solid #c7c6c5;
+}
+
+a.login-form-forgot,
+a.login-form-sin-up{
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+a.login-form-forgot:focus,
+a.login-form-sin-up:focus{
+  outline: none;
+}
+
+a.login-form-forgot:hover,
+a.login-form-sin-up:hover,
+a.login-form-forgot:focus,
+a.login-form-sin-up:focus
+a.login-form-forgot:active,
+a.login-form-sin-up:active{
+  color: #ffbc9e;
+}
+
+.modal-callback h2{
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+
+
+/* стили для catalog.html */
+ul.breadcrumbs{
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs li{
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
 }
