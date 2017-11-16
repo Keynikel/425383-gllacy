@@ -81,7 +81,7 @@
           <div class="filters-first-row">
             <fieldset>
               <legend>Сортировка</legend>
-              <div class="select">
+              <div class="filters-background">
                 <select class="filters-sorting" id="filters-sorting" name="filters-sorting">
                   <option value="popularity">по популярности</option>
                   <option value="cheaper-first">сначала недорогие</option>
@@ -92,7 +92,7 @@
             </fieldset>
             <fieldset>
               <legend>Цена: 100руб. - 500руб.</legend>
-              <div class="range">
+              <div class="filters-background">
                 <input type="range" class="filters-price" id="filters-price" name="filters-price" min="100" max="500">
                 <div class="scale">
                   <div class="scale-opaque"></div>
@@ -103,36 +103,40 @@
             </fieldset>
             <fieldset>
               <legend>Жирность</legend>
-              <input type="radio" id="fat-0" name="filters-fat" value="0">
-              <label for="fat-0">0%</label>
+              <div class="filters-background">
+                <input type="radio" id="fat-0" name="filters-fat" value="0">
+                <label for="fat-0">0%</label>
 
-              <input type="radio" id="fat-10" name="filters-fat" value="10">
-              <label for="fat-10">до 10%</label>
+                <input type="radio" id="fat-10" name="filters-fat" value="10">
+                <label for="fat-10">до 10%</label>
 
-              <input type="radio" id="fat-30" name="filters-fat" value="30">
-              <label for="fat-30">до 30%</label>
+                <input type="radio" id="fat-30" name="filters-fat" value="30">
+                <label for="fat-30">до 30%</label>
 
-              <input type="radio" id="fat-30-more" name="filters-fat" value="30-more">
-              <label for="fat-30-more">выше 30%</label>
+                <input type="radio" id="fat-30-more" name="filters-fat" value="30-more">
+                <label for="fat-30-more">выше 30%</label>
+              </div>
             </fieldset>
           </div>
           <div class="filters-second-row">
             <fieldset>
               <legend>Наполнители</legend>
-              <input type="checkbox" id="fillers-chocolate" name="filters-fillers" value="chocolate">
-              <label for="fillers-chocolate">шоколадные</label>
+              <div class="filters-background">
+                <input type="checkbox" id="fillers-chocolate" name="filters-fillers" value="chocolate">
+                <label for="fillers-chocolate">шоколадные</label>
 
-              <input type="checkbox" id="fillers-shugar" name="filters-fillers" value="shugar">
-              <label for="fillers-shugar">сахарные присыпки</label>
+                <input type="checkbox" id="fillers-shugar" name="filters-fillers" value="shugar">
+                <label for="fillers-shugar">сахарные присыпки</label>
 
-              <input type="checkbox" id="fillers-fruit" name="filters-fillers" value="fruit">
-              <label for="fillers-fruit">фрукты</label>
+                <input type="checkbox" id="fillers-fruit" name="filters-fillers" value="fruit">
+                <label for="fillers-fruit">фрукты</label>
 
-              <input type="checkbox" id="fillers-syrup" name="filters-fillers" value="syrup">
-              <label for="fillers-syrup">сиропы</label>
+                <input type="checkbox" id="fillers-syrup" name="filters-fillers" value="syrup">
+                <label for="fillers-syrup">сиропы</label>
 
-              <input type="checkbox" id="fillers-jam" name="filters-fillers" value="jam">
-              <label for="fillers-jam">джемы</label>
+                <input type="checkbox" id="fillers-jam" name="filters-fillers" value="jam">
+                <label for="fillers-jam">джемы</label>
+              </div>
             </fieldset>
             <button type="submit" class="filters-submit"> Применить</button>
           </div>

@@ -488,16 +488,10 @@ ul.breadcrumbs{
   color: #323232;
 }
 
-.filters .select{
+.filters .filters-background{
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
 }
-
-.filters .range{
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
-}
-
 
 .filters-submit{
   color: #ffffff;
