@@ -159,6 +159,8 @@ a{
   background-image: -webkit-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
   background-image: -ms-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 15px;
 }
 
 .button:focus{
@@ -278,7 +280,7 @@ a{
 .advantages-lead{
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold
+  font-weight: 500;
 }
 
 .advantages-list{
@@ -299,6 +301,7 @@ a{
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+  text-decoration: underline;
   border-bottom: 1px solid #b2b2b2;
 }
 
@@ -394,6 +397,10 @@ a.copyright.active{
   border-bottom-color: #ffbc9e;
 }
 
+.footer-documents-left a.bold-href{
+  font-weight: bold;
+}
+
 .modal-login input,
 .modal-search input,
 .modal-callback input,
@@ -452,4 +459,105 @@ ul.breadcrumbs{
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.filters fieldset{
+  border: none;
+}
+
+.filters legend{
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.filters input{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.filters select{
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+
+.filters select:focus{
+  color: #323232;
+}
+
+.filters .select{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+}
+
+.filters .range{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+}
+
+
+.filters-submit{
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filters-submit:focus{
+  color: #323232;
+
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.filters-submit:active{
+  color: #323232;
+
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+}
+
+.pagination-list{
+  list-style: none;
+}
+
+.pagination-list a{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.pagination-list .active a{
+  color: #323232;
+  background-color: rgb(255, 255, 255);
+}
+.pagination-list a:focus{
+  outline: none;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-cart{
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.modal-cart .item-price{
+  color: #999999;
+}
+
+.modal-cart .all-cost{
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+
 }
