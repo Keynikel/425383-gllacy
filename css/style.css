@@ -627,10 +627,6 @@ body{
   height: 570px;
 }
 
-.main-contacts{
-  text-align: right;
-}
-
 .main-contacts p:first-of-type{
   margin-top: 0px;
 }
@@ -771,6 +767,10 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.main-user-information.no-breadcrumbs{
+  justify-content: flex-end;
 }
 
 .breadcrumbs{
