@@ -303,7 +303,6 @@ a{
   line-height: 30px;
   color: #323232;
   font-weight: bold;
-  text-decoration: underline;
   border-bottom: 1px solid #b2b2b2;
 }
 
@@ -560,7 +559,7 @@ ul.breadcrumbs{
 /* сетки */
 
 body{
-  background-image: url("../img/gllacy-index-1200.jpg");
+  background-image: url("../img/gllacy-catalog-1200.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -621,13 +620,15 @@ body{
 .container{
   width: 1200px;
   margin: 0 auto;
-
-
 }
 
 .common-information{
   background: rgba(232, 19, 111, 0.3);
   height: 570px;
+}
+
+.main-contacts{
+  text-align: right;
 }
 
 .main-contacts p:first-of-type{
@@ -683,7 +684,6 @@ body{
 
 .advantages{
   height: 310px;
-  background: rgba(232, 19, 111, 0.3);
 
   margin: 0px 27px;
 }
@@ -763,4 +763,46 @@ display: flex;
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+
+.main-user-information{
+  background: rgba(232, 19, 19, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.breadcrumbs{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-user-information{
+  margin: 0;
+  padding: 0;
+}
+
+.filters-first-row,
+.filters-second-row{
+  display: flex;
+}
+
+.catalog{
+  flex-wrap: wrap;
+}
+
+.ice-cream-card{
+  width: 25%;
+}
+
+.pagination-list{
+  margin: 0;
+  padding: 0;
+  height: 156px;
+  background: rgba(232, 232, 19, 0.3);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
