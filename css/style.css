@@ -604,8 +604,6 @@ body{
   margin-right: 10px;
   margin-left: 27px;
   padding-top: 9px;
-
-  background: rgba(232, 232, 19, 0.3);
   width: 180px;
 }
 
@@ -673,8 +671,14 @@ body{
   height: 565px;
 }
 
+.main-contacts p{
+  margin: 0;
+  padding: 0;
+}
+
 .main-contacts p:first-of-type{
-  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-left: 10px;
 }
 
 .slider{
@@ -684,7 +688,7 @@ body{
 
   position: relative;
 
-  padding-top: 255px;
+  padding-top: 275px;
 
   text-align: center;
   color: #ffffff;
@@ -887,7 +891,6 @@ display: flex;
 
 
 .main-user-information{
-  background: rgba(232, 19, 19, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -895,6 +898,16 @@ display: flex;
 
 .main-user-information.no-breadcrumbs{
   justify-content: flex-end;
+}
+
+.main-contacts{
+  width: 215px;
+  height: 100%;
+
+  padding-top: 5px;
+
+  text-align: center;
+
 }
 
 .breadcrumbs{
