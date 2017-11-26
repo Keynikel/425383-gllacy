@@ -42,15 +42,18 @@ a{
 
 /* стили главного меню */
 
-.site-navigation-item>a{
-  color: #ffffff;
-  font-weight: bold;
+.site-navigation-item span{
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.site-navigation-item.active>a{
+.site-navigation-item>a{
   padding: 7px 15px;
+  color: #ffffff;
+  font-weight: bold;
 
+}
+
+.site-navigation-item.active>a{
   background-color: #d07058;
   border: none;
   border-radius: 15px;
@@ -58,7 +61,6 @@ a{
 
 .site-navigation-item>a:hover,
 .site-navigation-item>a:focus{
-  padding: 7px 15px;
 
   color: #333333;
 
@@ -229,6 +231,9 @@ a{
 }
 
 .spetial-offer-raspberries{
+  display: flex;
+  flex-direction: column;
+
   font-size: 18px;
   line-height: 22px;
   color: white;
@@ -245,7 +250,17 @@ a{
   line-height: 41px;
 }
 
+.button.want-raspberies{
+  align-self: flex-end;
+  margin-right: 22px;
+  margin-top: 43px;
+  padding: 12px 23px;
+}
+
 .spetial-offer-chocolate{
+  display: flex;
+  flex-direction: column;
+
   font-size: 18px;
   line-height: 22px;
 
@@ -259,6 +274,13 @@ a{
 .spetial-offer-chocolate .offer-lead{
   font-size: 35px;
   line-height: 41px;
+}
+
+.button.want-chocolate{
+  align-self: flex-end;
+  margin-right: 22px;
+  margin-top: 43px;
+  padding: 12px 23px;
 }
 
 .catalog{
@@ -297,6 +319,10 @@ a{
 }
 
 .advantages{
+  height: 305px;
+  margin: 9px 27px;
+  border-radius: 15px;
+
   color: #323232;
 
   background-color: #f1e8d5;
@@ -307,6 +333,12 @@ a{
 }
 
 .advantages-lead{
+  margin: 0;
+  margin-left: 21px;
+  padding: 0;
+  padding-top: 24px;
+
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -321,17 +353,31 @@ a{
 
   background-color: #ffffff;
   background-image: url("../img/news-bg.jpg");
-  background-position: 50% 50%;
+  background-position: 17% 39%;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
+.useful-information h3{
+  margin: 0;
+  margin-top: 23px;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .useful-information a{
+  display: block;
+  width: 50%;
+
+  margin-left: 20px;
+  margin-top: 4px;
+
   font-size: 24px;
   line-height: 30px;
   color: #323232;
   font-weight: bold;
-  border-bottom: 1px solid #b2b2b2;
+  text-decoration: underline;
 }
 
 .useful-information a:focus{
@@ -353,19 +399,41 @@ a{
   border-image: url("../img/letter-bg.svg") 5 round round;
 }
 
+.subscribe-form p{
+  margin: 30px 20px;
+}
+
+.subscribe-form form{
+  margin-left: 21px;
+  padding-top: 5px;
+}
+
 .subscribe-form input[type="email"]{
   font: inherit;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
+  padding: 10px 13px;
+  width: 341px;
 }
 
 .subscribe-form input[type="email"]:focus{
   border: 2px solid #c7c6c5;
 }
 
+
+.button.subscribe-button{
+  font-size: 18px;
+  line-height: 24px;
+  padding: 9px 20px;
+  margin-left: 5px;
+}
+
+
 .map{
+  position: relative;
+
   color: #323232;
 
   background-color: #c7c6c5;
@@ -376,10 +444,23 @@ a{
 }
 
 .map-legend{
+  position: absolute;
+  top: 62px;
+  right: 28px;
+  width: 301px;
+  padding-top: 30px;
+  border-radius: 15px;
+
   font-size: 14px;
   line-height: 20px;
 
   background-color: #ffffff;
+}
+
+.map-legend .map-legend-address{
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
 }
 
 .map-legend strong{
@@ -547,6 +628,9 @@ ul.breadcrumbs{
 }
 
 .pagination-list a{
+  padding: 5px 10px;
+  border-radius: 50%;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -586,12 +670,6 @@ ul.breadcrumbs{
 
 /* сетки */
 
-body{
-  background-image: url("../img/gllacy-index-1200.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
 .main-navigation{
   display: flex;
 
@@ -601,7 +679,7 @@ body{
 }
 
 .main-header-logo{
-  margin-right: 10px;
+  margin-right: 6px;
   margin-left: 27px;
   padding-top: 9px;
   width: 180px;
@@ -617,7 +695,7 @@ body{
   margin: 0;
   padding: 0;
   padding-top: 5px;
-  width: 377px;
+  width: 385px;
 
   display: flex;
   justify-content: space-around;
@@ -638,8 +716,7 @@ body{
 }
 
 .site-wrapper{
-  //background-color: #849d8f;
-  //background-image: url("../img/index-first_slide.png");
+  background-color: #849d8f;
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -766,7 +843,6 @@ body{
 }
 
 .spetial-offer{
-  background: rgba(232, 19, 19, 0.3);
   height: 260px;
   padding: 10px 15px 0px;
 
@@ -781,40 +857,23 @@ body{
   border-radius: 15px;
 }
 
+.spetial-offer p{
+  margin: 0;
+  padding: 0;
+}
+
+.spetial-offer p{
+  padding-top: 15px;
+  padding-left: 18px;
+}
+
+.spetial-offer p.offer-lead{
+  padding-top: 18px;
+}
+
 .hits{
+  padding: 0px 15px;
   height: 365px;
-  background: rgba(0, 255, 0, 0.3);
-}
-
-.catalog{
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding:0;
-}
-
-.ice-cream-card>p{
-  margin: 0;
-  padding: 0;
-}
-
-.ice-cream-card p.price{
-  margin-top: -35px;
-}
-
-.ice-cream-card>img{
-  border-radius: 135px;
-}
-
-.advantages{
-  height: 310px;
-
-  margin: 0px 27px;
-}
-
-.advantages>p{
-  margin: 0;
-  padding: 0;
 }
 
 .advantages-list{
@@ -822,39 +881,53 @@ body{
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .advantages-list>li{
+  position: relative;
   width: 50%;
 }
 
-.advantages-list>li:nth-child(1){
-  order: 1;
-}
-.advantages-list>li:nth-child(2){
-  order: 3;
-}
-.advantages-list>li:nth-child(3){
-  order: 2;
+.advantages-list>li::before{
+  content: "";
+
+  position: absolute;
+  top: 10px;
+
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.advantages-list>li:nth-child(4){
-  order: 4;
+.advantages-list>li:nth-child(1)::before{
+  background-image: url("../img/ice-cream.svg");
+}
+.advantages-list>li:nth-child(2)::before{
+  background-image: url("../img/cow.svg");
+}
+.advantages-list>li:nth-child(3)::before{
+  background-image: url("../img/eco.svg");
+}
+
+.advantages-list>li:nth-child(4)::before{
+  background-image: url("../img/thermometer.svg");
 }
 
 
 .useful-information{
-padding: 0;
-margin: 0 27px;
-margin-top: 39px;
-margin-bottom: 40px;
-height: 220px;
-display: flex;
+  padding: 0;
+  margin: 40px 27px;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .useful-information .news,
 .useful-information .subscribe-form{
-  width: 50%;
+  width: 49%;
+  border-radius: 15px;
 }
 
 .map{
@@ -927,19 +1000,60 @@ display: flex;
 }
 
 .catalog{
+
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding:0;
 }
 
 .ice-cream-card{
-  width: 25%;
+  position: relative;
+  width: 23%;
+  padding-top: 12px;
 }
+
+.ice-cream-card::before{
+  content: "";
+
+  position: absolute;
+  top: 10px;
+
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.ice-cream-card>p{
+  margin: 0;
+  padding: 0;
+}
+
+.ice-cream-card p.price{
+  margin-top: -65px;
+}
+
+.ice-cream-card>img{
+  border-radius: 135px;
+}
+
+.ice-cream-card p.description{
+  text-align: center;
+  margin-top: 21px;
+}
+
 
 .pagination-list{
   margin: 0;
   padding: 0;
+  padding-bottom: 35px;
   height: 156px;
-  background: rgba(232, 232, 19, 0.3);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  background: rgba(232, 232, 19, 0.3);
+  border-bottom: 1px solid #adbdb4;
 }
