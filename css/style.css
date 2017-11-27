@@ -111,34 +111,48 @@ a{
 
 /* стили пользовательского меню */
 
+.user-navigation li:not(:last-child){
+  margin-right: 12px;
+}
+
+.user-navigation li:first-child{
+  margin-left: 22px;
+}
+
 .user-navigation a{
-  padding: 10px 15px;
+  padding: 8px 35px;
 
   color: #ffffff;
 
+  font-size: 14px;
+  line-height: 16px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
 }
 
-.user-navigation .login a,
-.user-navigation .cart a{
-  position: relative;
-  padding-left: 35px;
+.login a{
+  padding: 8px 16px;
 }
 
-.user-navigation .login a::before,
-.user-navigation .cart a::before{
+.login a,
+.cart a{
+  position: relative;
+  padding-left: 43px;
+}
+
+.login a::before,
+.cart a::before{
   content: "";
 
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: 6px;
+  left: 15px;
 
   width: 21px;
   height: 21px;
 }
 
-.user-navigation .login a::before{
+.login a::before{
   background-image: url("../img/log-in.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -172,6 +186,7 @@ a{
 .main-user-information a{
   font-size: 22px;
   line-height: 24px;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -447,23 +462,38 @@ a{
   position: absolute;
   top: 62px;
   right: 28px;
-  width: 301px;
-  padding-top: 30px;
+
+  width: 276px;
+  padding-top: 29px;
+  padding-left: 25px;
   border-radius: 15px;
 
   font-size: 14px;
   line-height: 20px;
-
   background-color: #ffffff;
 }
 
 .map-legend .map-legend-address{
   margin: 0;
   padding: 0;
-  padding-left: 25px;
+}
+
+.map-legend .map-legend-contacts{
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
 }
 
 .map-legend strong{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button.callback-form-button{
+  margin-top: 30px;
+  margin-bottom: 32px;
+  padding: 10px 28px;
+
   font-size: 18px;
   line-height: 24px;
 }
@@ -482,6 +512,15 @@ a{
 .footer-documents a,
 a.copyright{
   color: #ffffff;
+}
+
+.footer-social svg{
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+
+a.copyright{
   border-bottom: 1px solid #adbdb4;
 }
 
@@ -504,6 +543,18 @@ a.copyright.active{
   color: #ffbc9e;
 
   border-bottom-color: #ffbc9e;
+}
+
+.social::before{
+  content: "";
+
+  position: absolute;
+  top: 10px;
+
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer-documents.left a.bold-href{
@@ -705,15 +756,25 @@ ul.breadcrumbs{
 .user-navigation{
   margin: 0;
   padding: 0;
-  background: rgba(232, 232, 19, 0.3);
+  padding-top: 4px;
   min-height: 70px;
   width: 310px;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
 }
+
+.search-panel a{
+  padding: 8px 7px 4px 7px;
+}
+
+.search-button:hover path,
+.search-button:focus path{
+  fill: #000;
+}
+
+
 
 .site-wrapper{
   background-color: #849d8f;
@@ -790,7 +851,7 @@ ul.breadcrumbs{
 
 .slider-controls {
   position: absolute;
-  bottom: 23px;
+  bottom: 25px;
   left: 0;
   z-index: 20;
 
@@ -931,7 +992,7 @@ ul.breadcrumbs{
 }
 
 .map{
-  height: 430px;
+  height: 425px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -939,8 +1000,7 @@ ul.breadcrumbs{
 
 
 .main-footer{
-  background: rgba(0, 255, 0, 0.3);
-  min-height: 70px;
+  min-height: 110px;
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -1040,9 +1100,11 @@ ul.breadcrumbs{
   border-radius: 135px;
 }
 
-.ice-cream-card p.description{
+.ice-cream-card .description{
+  margin-top: 15px;
+  padding: 7px;
+
   text-align: center;
-  margin-top: 21px;
 }
 
 
