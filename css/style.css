@@ -342,9 +342,9 @@ a{
 
   background-color: #f1e8d5;
   background-image: url("../img/vuffles.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .advantages-lead{
@@ -945,16 +945,24 @@ ul.breadcrumbs{
   justify-content: space-around;
 }
 
-.advantages-list>li{
+.advantages-list li{
   position: relative;
   width: 50%;
 }
 
-.advantages-list>li::before{
+.advantages-list p{
+  margin: 0;
+  margin-top: 20px;
+  padding-left: 77px;
+  padding-right: 10px;
+}
+
+.advantages-list li::before{
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: 8px;
+  left: 20px;
 
   width: 60px;
   height: 60px;
@@ -962,17 +970,17 @@ ul.breadcrumbs{
   background-position: 0 0;
 }
 
-.advantages-list>li:nth-child(1)::before{
+.advantages-list li:nth-child(1)::before{
   background-image: url("../img/ice-cream.svg");
 }
-.advantages-list>li:nth-child(2)::before{
+.advantages-list li:nth-child(2)::before{
   background-image: url("../img/cow.svg");
 }
-.advantages-list>li:nth-child(3)::before{
+.advantages-list li:nth-child(3)::before{
   background-image: url("../img/eco.svg");
 }
 
-.advantages-list>li:nth-child(4)::before{
+.advantages-list li:nth-child(4)::before{
   background-image: url("../img/thermometer.svg");
 }
 
