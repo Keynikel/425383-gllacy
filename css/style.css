@@ -123,9 +123,24 @@ a{
   box-shadow: inset 0px 2px 1px 0px #6e6f6f;
 }
 
+.new-offers{
+  position: relative;
+}
+
+.new-offers:hover .site-navigation-subnavigation{
+    display: block;
+}
+
 /* стили подменю главного меню */
 
 .site-navigation-subnavigation{
+  position: absolute;
+  top: 30px;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+
   background-color: #f8f7f4;
 }
 
@@ -200,6 +215,11 @@ a{
 .search-panel svg{
   position: relative;
   top: 2px;
+}
+
+.search-button{
+  width: 33px;
+  height: 33px;
 }
 
 .search-button:hover path,
