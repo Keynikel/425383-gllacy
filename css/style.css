@@ -123,11 +123,11 @@ a{
   box-shadow: inset 0px 2px 1px 0px #6e6f6f;
 }
 
-.new-offers{
+.catalog{
   position: relative;
 }
 
-.new-offers:hover .site-navigation-subnavigation{
+.catalog:hover .site-navigation-subnavigation{
     display: block;
 }
 
@@ -135,22 +135,38 @@ a{
 
 .site-navigation-subnavigation{
   position: absolute;
-  top: 30px;
+  top: 37px;
+  left: -2px;
+  z-index: 1;
 
-  display: block;
+  display: none;
+
+  min-width: 142px;
   margin: 0;
   padding: 0;
+  border-radius: 5px;
 
   background-color: #f8f7f4;
+
 }
 
 .site-navigation-subnavigation p{
+  display: block;
+  margin: 0;
+  padding: 10px 0px 12px 19px;
+
+  font-size: 14px;
+  line-height: 16px;
   font-weight: bold;
   color: #323232;
+
   border-bottom: 1px solid #d1d0ce;
 }
 
 .site-navigation-subnavigation a{
+  display: block;
+  padding: 9px 0px 6px 19px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -159,7 +175,7 @@ a{
   border: none;
 }
 
-.site-navigation-subnavigation .active a{
+.site-navigation-subnavigation  a.active{
   background-color: rgb(208, 112, 88);
 }
 
@@ -171,7 +187,10 @@ a{
 
 .site-navigation-subnavigation a:active{
   background-color: rgba(208, 112, 88, 0.5);
+}
 
+.site-navigation-subnavigation li:last-child{
+  margin-bottom: 10px;
 }
 
 /* стили пользовательского меню */
@@ -682,8 +701,11 @@ a{
   padding-top: 5px;
 }
 
+
+
 .subscribe-form input[type="email"]{
   font: inherit;
+  color: #323232;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
@@ -1062,17 +1084,17 @@ ul.breadcrumbs{
   background-position: 0 0;
 }
 
-.advantages-list li:nth-child(1)::before{
+.advantages-list .first::before{
   background-image: url("../img/ice-cream.svg");
 }
-.advantages-list li:nth-child(2)::before{
+.advantages-list .second::before{
   background-image: url("../img/cow.svg");
 }
-.advantages-list li:nth-child(3)::before{
+.advantages-list .third::before{
   background-image: url("../img/eco.svg");
 }
 
-.advantages-list li:nth-child(4)::before{
+.advantages-list .fourth::before{
   background-image: url("../img/thermometer.svg");
 }
 
@@ -1195,6 +1217,7 @@ ul.breadcrumbs{
 
 .ice-cream-card{
   position: relative;
+  z-index: 1;
   width: 23%;
   padding-top: 12px;
 }
@@ -1210,6 +1233,29 @@ ul.breadcrumbs{
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.ice-cream-card::after{
+  content: "";
+  position: absolute;
+  background: transparent;
+  width: 295px;
+  height: 405px;
+  z-index: 0;
+  top: 6px;
+  left: -15px;
+  border-radius: 5px;
+  z-index: -1;
+
+}
+
+.ice-cream-card:hover::after,
+.ice-cream-card:focus::after{
+  background: rgba(255, 255, 255,0.4);
+}
+
+.ice-cream-card:hover .button.fast-view{
+  display: block;
 }
 
 .ice-cream-card>p{
@@ -1230,6 +1276,21 @@ ul.breadcrumbs{
   padding: 7px;
 
   text-align: center;
+}
+
+.button.fast-view{
+
+  position: absolute;
+  bottom: -50px;
+  left: 31px;
+
+  display: none;
+
+  padding: 10px 12px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 
