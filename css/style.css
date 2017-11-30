@@ -98,8 +98,8 @@ a{
 }
 
 .navigation-item{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .navigation-item span{
@@ -113,9 +113,12 @@ a{
   font-weight: bold;
 }
 
+.navigation-item.active span{
+  border-bottom: none;
+}
+
 .navigation-item.active>a{
   background-color: #d07058;
-  border: none;
   border-radius: 15px;
 }
 
@@ -250,8 +253,8 @@ a{
 .search-panel{
   position: relative;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .search-panel a{
@@ -276,7 +279,7 @@ a{
 .search-field{
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 47px;
 
   display: none;
   margin: 0;
@@ -310,8 +313,8 @@ a{
 .login{
   position: relative;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .login>a{
@@ -365,7 +368,7 @@ a{
 .login-form{
   position: absolute;
   right: -3px;
-  top: 40px;
+  top: 45px;
   z-index: 1;
 
   display: none;
@@ -934,6 +937,23 @@ a{
   list-style: none;
 }
 
+.social-button{
+  display: block;
+  width: 33px;
+  height: 33px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.social-button:hover path,
+.social-button:focus path{
+  fill: #ffffff;
+}
+
+.social-button:active path{
+  fill: #e9e9e9;
+}
+
 .footer-social a,
 .footer-documents a,
 a.copyright{
@@ -945,24 +965,11 @@ a.copyright{
     border-bottom: 1px solid #adbdb4;
 }
 
-.footer-social svg{
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-}
 
-.footer-social a:focus,
-.footer-documents a:focus,
-a.copyright:focus{
-  outline: none;
-}
-
-.footer-social a:hover,
 .footer-documents a:hover,
 a.copyright:hover,
-.footer-social a:focus,
 .footer-documents a:focus
 a.copyright:focus,
-.footer-social a:active,
 .footer-documents a:active,
 a.copyright.active{
   color: #ffbc9e;
@@ -1075,6 +1082,20 @@ ul.breadcrumbs{
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.crumb{
+  position: relative;
+
+  padding-right: 10px;
+}
+
+.crumb::after{
+  content: url("../img/icon-right-small.svg");
+
+  position: absolute;
+  right: 0;
+
 }
 
 .filters fieldset{
