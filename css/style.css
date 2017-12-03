@@ -351,6 +351,12 @@ a{
   background-position: 0 0;
 }
 
+.fill-cart>a::before{
+  background-image: url("../img/cart-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .login>a:focus::before,
 .login>a:hover::before{
   background-image: url("../img/log-in-black.svg");
@@ -359,6 +365,11 @@ a{
 .cart a:focus::before,
 .cart a:hover::before{
   background-image: url("../img/cart-black.svg");
+}
+
+.fill-cart a:focus::before,
+.fill-cart a:hover::before{
+  background-image: url("../img/cart-red.svg");
 }
 
 .login:hover .login-form{
@@ -443,6 +454,46 @@ a{
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+}
+
+/* всплывашка с корзиной*/
+
+/* конец корзины*/
+
+.fill-cart{
+  position: relative;
+}
+
+.cart-table{
+  position: absolute;
+  right: 0;
+  top: 30px;
+
+  margin: 0;
+  padding: 0;
+  width: 540px;
+  padding: 25px 15px;
+
+  border-radius: 10px;
+
+  list-style: none;
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.cart .item-price{
+  color: #999999;
+}
+
+.cart .all-cost{
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+
 }
 
 /* конец меню */
@@ -725,37 +776,6 @@ a{
 
 .catalog{
   list-style: none;
-}
-
-.price{
-  position: relative;
-
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: bold;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
-}
-
-.price span:first-of-type{
-  padding-right: 35px;
-}
-
-.price span:first-of-type::after{
-  content: url("../img/rub.svg");
-
-  position: absolute;
-  top: 5px;
-
-  width: 31px;
-  height: 36px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.weight{
-  font-size: 30px;
-  line-height: 45px;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .description a{
@@ -1115,6 +1135,7 @@ ul.breadcrumbs{
 
 .filters{
   margin-left: 28px;
+  margin-bottom: 40px;
 }
 
 .filters fieldset{
@@ -1132,6 +1153,7 @@ ul.breadcrumbs{
   line-height: 16px;
   color: #ffffff;
 }
+
 
 .filters input{
   font-size: 16px;
@@ -1188,11 +1210,229 @@ select {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+
+/* ползунки */
+
+.price-controls {
+  display: inline-block;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  cursor: pointer;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  background: none;
+  border: none;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 60px;
+  margin-right: 6px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 54%;
+
+  width: 8px;
+  height: 2px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.ranges{
+  position: relative;
+  width: 215px;
+}
+
+.ranges .filters-background{
+  height: 20px;
+}
+
+.range-controls {
+    position: absolute;
+    bottom: 18px;
+}
+
+.scale {
+    width: 175px;
+    height: 4px;
+    background: rgba(255,255,255,.3);
+    margin-left: 5px;
+}
+
+.bar {
+    width: 103px;
+    height: 4px;
+    background: #fff;
+    margin-left: 25px;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 19px;
+}
+
+.range-toggle-max {
+  right: 43px;
+}
+
+.range-toggle:hover {
+  cursor: pointer;
+}
+/* конец кода ползунков */
+
+/* жирность */
+.filters-background ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.filter-option {
+  display: inline-block;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-filter + label::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 3px solid rgba(255,255,255,0.7);
+  border-radius: 50%;
+}
+
+.radio-filter:hover + label::before,
+.radio-filter:focus + label::before{
+  border-color: rgba(255,255,255,1);
+}
+
+.radio-filter:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -26px;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 50%;
+}
+
+.radio-filter:checked:hover + label::after{
+  background-color: rgba(255,255,255,1);
+}
+/* end жирность*/
+
+/* наполнители */
+
+.filter-option.checklist{
+    padding-right: 18px;
+}
+
+
+.checkbox-filter + label::before{
+  content: "";
+      position: absolute;
+      left: -25px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      border-radius: 3px;
+}
+
+.checkbox-filter:hover + label::before{
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.checkbox-filter:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -28px;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.8;
+}
+
+.checkbox-filter:checked:hover + label::after,
+.checkbox-filter:checked:focus + label::after{
+  opacity: 1;
+}
+
+/* end наполнители */
+
+/* кнопка применить */
+.filters-submit {
+  align-self: flex-end;
+
+  padding: 8px 28px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+}
+
+.filters-submit:hover,
 .filters-submit:focus{
   color: #323232;
-
   background-color: rgba(255, 255, 255, 1);
-  outline: none;
 }
 
 .filters-submit:active{
@@ -1202,12 +1442,25 @@ select {
   box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
+/* end применить*/
+
 .pagination-list{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+  height: 156px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #adbdb4;
   list-style: none;
+
+  margin-right: 15px;
+    margin-top: 9px;
 }
 
 .pagination-list a{
-  padding: 5px 10px;
+  padding: 2px 7px;
   border-radius: 50%;
 
   font-size: 16px;
@@ -1228,24 +1481,19 @@ select {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.modal-cart{
-  font-size: 13px;
-  line-height: 16px;
-  color: #323232;
-
-  background-color: #ffffff;
+.pagination-item {
+    margin-right: 7px;
 }
 
-.modal-cart .item-price{
-  color: #999999;
+.prev_page svg{
+  transform: rotate(180deg);
 }
 
-.modal-cart .all-cost{
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: bold;
-
+.prev_page.disabled:hover,
+.prev_page.disabled:focus{
+  background:none
 }
+
 
 /* сетки */
 
@@ -1422,107 +1670,123 @@ select {
 
 .ice-cream-card{
   position: relative;
-  width: 23%;
-  padding-top: 12px;
+  width: 267px;
+  min-height: 324px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
-
-.ice-cream-card img,
-.ice-cream-card .price,
-.ice-cream-card .description{
-  z-index: 15;
-}
-
-.ice-cream-card .description{
-  position: relative;
-}
-
-.ice-cream-card button{
-  z-index: 20;
-}
-
 .best-offers::before{
   content: "";
 
   position: absolute;
   top: 10px;
-
+  z-index: 15;
   width: 60px;
   height: 60px;
   background-image: url("../img/hit.svg");
-  background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .ice-cream-card::after{
-  content: "";
   position: absolute;
-  background: transparent;
-  width: 295px;
+  content: '';
+  left: -13px;
+  top: -8px;
+  width: 293px;
   height: 405px;
-  top: 6px;
-  left: -15px;
   border-radius: 5px;
-
 }
 
-.ice-cream-card:hover::after,
-.ice-cream-card:focus::after{
-  background: rgba(255, 255, 255,0.2);
-  z-index: 10;
-
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.4);
+.ice-cream-img {
+  width: 267px;
+  height: 267px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  z-index: 9;
 }
 
-.ice-cream-card:hover .button.fast-view{
+.description {
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 45px;
+  padding-left: 6px;
+  padding-right: 7px;
+  text-align: center;
+  z-index: 9;
+}
+
+.fast-view {
+position: absolute;
+display: none;
+bottom: -55px;
+left: 30px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+background-color: #f26843;
+background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+border-radius: 30px;
+box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+font-size: 18px;
+line-height: 24px;
+font-weight: 700;
+text-align: center;
+color: #ffffff;
+cursor: pointer;
+z-index: 10;
+}
+
+.price {
+  position: absolute;
+  margin: 0;
+  bottom: 66px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+  z-index: 9;
+}
+
+.value {
+  margin: 0;
+  padding-right: 35px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.value::after {
+  content: url(../img/rub.svg);
+  position: absolute;
+  top: 5px;
+  width: 31px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.weight {
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.ice-cream-card:hover > .fast-view,
+.ice-cream-card:focus > .fast-view {
   display: block;
 }
 
-.ice-cream-card>p{
-  margin: 0;
-  padding: 0;
+.ice-cream-card:hover::after,
+.ice-cream-card:focus::after {
+  background-color: rgba(248, 247, 244, 0.2);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  z-index: 7;
 }
 
-.ice-cream-card p.price{
-  margin-top: -65px;
-}
-
-.ice-cream-card>img{
-  border-radius: 135px;
-}
-
-.ice-cream-card .description{
-  margin-top: 15px;
-  padding: 7px;
-
-  text-align: center;
-}
-
-.button.fast-view{
-
-  position: absolute;
-  bottom: -50px;
-  left: 31px;
-
-  display: none;
-
-  padding: 10px 12px;
-
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-
-.pagination-list{
-  margin: 0;
-  padding: 0;
-  padding-bottom: 35px;
-  height: 156px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border-bottom: 1px solid #adbdb4;
-}
 
 
 /* модальные окна */
