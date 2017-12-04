@@ -504,15 +504,8 @@ a{
 }
 
 .container h1{
-<<<<<<< HEAD
-  margin: 0;
-  margin-top: 3px;
-  margin-bottom: 24px;
-  margin-left: 27px;
-
-=======
   margin: 2px 0px 27px 27px;
->>>>>>> 3cf344203230a98d3a269a01f484ef3a8aee857e
+
   padding: 0;
 
   font-size: 35px;
@@ -526,11 +519,7 @@ a{
   margin-top: -8px;
 }
 
-<<<<<<< HEAD
-.contact-info{
-=======
 .user-info{
->>>>>>> 3cf344203230a98d3a269a01f484ef3a8aee857e
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -542,26 +531,19 @@ a{
   line-height: 14px;
 }
 
-<<<<<<< HEAD
-.contact-info a{
-=======
-.user-info a{
->>>>>>> 3cf344203230a98d3a269a01f484ef3a8aee857e
+.main-contacts a{
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
 }
 
-<<<<<<< HEAD
 .contact-info a:hover,
 .contact-info a:focus,
 .contact-info a:active{
   color: #ffbc9e;
 }
 
-.contact-info.no-breadcrumbs{
-=======
 .user-info a:hover,
 .user-info a:focus,
 .user-info a:active{
@@ -569,7 +551,6 @@ a{
 }
 
 .no-breadcrumbs{
->>>>>>> 3cf344203230a98d3a269a01f484ef3a8aee857e
   justify-content: flex-end;
 }
 
@@ -1167,6 +1148,10 @@ a.login-form-sin-up:focus{
   color: #ffffff;
 }
 
+.crumb a{
+  color: #ffffff;
+}
+
 .crumb:not(:first-of-type){
   padding-left: 11px;
 }
@@ -1494,6 +1479,7 @@ select {
   justify-content: flex-end;
   align-items: flex-end;
   border-bottom: 1px solid #adbdb4;
+
   list-style: none;
 
   margin-right: 15px;
@@ -1831,6 +1817,7 @@ z-index: 10;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   z-index: 7;
 }
+
 
 
 
