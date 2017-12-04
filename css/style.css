@@ -534,13 +534,17 @@ a{
 /* конец меню */
 
 .container{
+
   width: 1200px;
   min-width: 940px;
   margin: 0 auto;
+  padding: 0px 26px;
 }
 
 .container h1{
-  margin: 2px 0px 23px 27px;
+  margin-top: 2px;
+  margin-bottom: 23px;
+  margin-left: 27px;
 
   padding: 0;
 
@@ -596,6 +600,7 @@ a{
 
 .has-breadcrumbs .main-contacts{
   margin-top: -3px;
+  margin-right: -25px;
 }
 
 .main-contacts p{
@@ -776,6 +781,7 @@ a{
   padding: 0;
   padding-left: 18px;
   padding-right: 25px;
+  padding-top: 15px;
 }
 
 .offer-lead{
@@ -812,8 +818,8 @@ a{
 
 /* hits*/
 .hits{
-  padding: 27px 15px 0px;
-  height: 365px;
+  padding-top: 39px;
+  height: 360px;
 }
 
 .catalog{
@@ -843,7 +849,7 @@ a{
 
 .advantages{
   height: 305px;
-  margin: 9px 27px;
+  margin: 0px 27px;
   border-radius: 15px;
 
   color: #323232;
@@ -857,8 +863,8 @@ a{
 
 .advantages-lead{
   margin: 0;
-  margin-left: 21px;
   padding: 0;
+  padding-left: 20px;
   padding-top: 24px;
 
 
@@ -1216,7 +1222,7 @@ a.login-form-sin-up:focus{
 .breadcrumbs{
   margin: 0;
   margin-top: 18px;
-  margin-left: 27px;
+  margin-left: 26px;
 
   padding: 0;
   display: flex;
@@ -1689,15 +1695,6 @@ select {
   padding-top: 5px;
 }
 
-.breadcrumbs{
-  margin: 0;
-  margin-top: 15px;
-  margin-left: 26px;
-
-  padding: 0;
-  display: flex;
-}
-
 .filters-first-row,
 .filters-second-row{
   display: flex;
@@ -1819,7 +1816,7 @@ select {
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: 0px;
   z-index: 15;
   width: 60px;
   height: 60px;
