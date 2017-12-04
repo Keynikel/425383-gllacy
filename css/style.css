@@ -504,7 +504,7 @@ a{
 }
 
 .container h1{
-  margin: 2px 0px 27px 27px;
+  margin: 2px 0px 23px 27px;
 
   padding: 0;
 
@@ -1155,12 +1155,8 @@ a.login-form-sin-up:focus{
 .crumb:not(:first-of-type){
   padding-left: 11px;
 }
-
-  padding-right: 7px;
-}
-
 .filters{
-  margin-left: 28px;
+  margin-left: 25px;
   margin-bottom: 40px;
 }
 
