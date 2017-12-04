@@ -16,8 +16,8 @@
           </a>
           <div class="navigation-container">
             <ul class="site-navigation">
-              <li class="navigation-item catalog-item active">
-                <a href="catalog.html"><span>Каталог</span></a>
+              <li class="navigation-item catalog-item">
+                <a class="active" href="catalog.html"><span class="navigation-label">Каталог</span></a>
                 <ul class="subnavigation ">
                   <li class="subnavigation-item">
                     <p>Новинки</p>
@@ -37,10 +37,10 @@
                 </ul>
               </li>
               <li class="navigation-item">
-                <a href="delivery.html"><span>Доставка и оплата</span></a>
+                <a href="delivery.html"><span class="navigation-label">Доставка и оплата</span></a>
               </li>
               <li class="navigation-item">
-                <a href="about.html"><span>О Компании</span></a>
+                <a href="about.html"><span class="navigation-label">О Компании</span></a>
               </li>
             </ul>
             <ul class="user-navigation">
@@ -85,10 +85,10 @@
               </li>
               <li class="cart fill-cart">
                 <a class="cart-button" href="#">2 товара</a>
-                <ul class="cart-table visible-hidden">
+                <ul class="cart-content">
                   <li>
                     <h2 class="visible-hidden">Корзина</h2>
-                    <table>
+                    <table class="cart-table">
                       <thead>
                         <tr>
                           <td class="visible-hidden">Удалить</td>
@@ -99,20 +99,20 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr class="cart-item">
                           <td class="close"><button class="modal-close" type="button">Удалить</button></td>
                           <td class="item-image"><img src="img/orange.jpg" width="33" height="33" alt="Сливочное мороженое"></td>
                           <td class="item-name">Пломбир с апельсиновым джемом</td>
                           <td class="item-weight-price">1.5 кг x <span class="item-price">200 руб</span></td>
                           <td class="item-cost">300 руб</td>
                         </tr>
-                        <tr>
+                        <tr class="cart-item bordered-item">
                           <td class="close"><button class="modal-close" type="button">Удалить</button></td>
                           <td class="item-image"><img src="img/strawberry.jpg" width="33" height="33" alt="Сливочно-клубничное мороженое"></td>
                           <td class="item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
                           <td class="item-weight-price">1.5 кг x <span class="item-price">300 руб</span></td>
                           <td class="item-cost">450 руб</td></tr>
-                        <tr>
+                        <tr class="cart-summury">
                           <td class="all-cost" colspan="5">Итого: 750 руб</td>
                         </tr>
                       </tbody>
@@ -313,7 +313,7 @@
             <li class="ice-cream-card">
               <img class="ice-cream-img" src="img/mint-green.jpg" width="267" height="267" alt="Сливочное с мятным сиропом мороженное">
               <p class="price"><span class="value">420</span><span class="weight">/кг</span></p>
-              <p class="description"><a href="#">Сливочное с мятным сиропом мороженное</a></p>
+              <p class="description"><a href="#">Сливочное с мятным сиропом</a></p>
               <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
             </li>
           </ul>
