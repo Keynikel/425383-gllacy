@@ -910,10 +910,6 @@ a{
   height: 360px;
 }
 
-.catalog{
-  list-style: none;
-}
-
 .description a{
   color: #ffffff;
 
@@ -1381,6 +1377,7 @@ a.login-form-sin-up:focus{
 .select {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 .select:after {
   content: url("../img/select-arrow.svg");
@@ -1407,10 +1404,14 @@ select {
 .price-controls {
   display: inline-block;
   position: relative;
+
+  vertical-align: top;
 }
 
 .price-controls label {
   display: inline-block;
+
+  vertical-align: top;
 
   font-size: 14px;
   line-height: 16px;
@@ -1513,8 +1514,9 @@ select {
 
 .filter-option {
   display: inline-block;
-    padding-left: 30px;
-    padding-right: 15px;
+  vertical-align: top;
+  padding-left: 30px;
+  padding-right: 15px;
 }
 
 
@@ -1797,9 +1799,10 @@ select {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0;
   padding:0;
+  list-style: none;
 }
 
 /* карточки товара */
@@ -2059,6 +2062,57 @@ select {
 
 }
 
+.show-modal{
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.error-modal {
+  animation: shake 0.6s;
+}
+
 .visible{
   display: block;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
