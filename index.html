@@ -144,25 +144,37 @@
           <ul class="catalog">
             <li class="ice-cream-card best-offers">
               <img class="ice-cream-img" src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="price"><span class="value">310</span><span class="weight">/кг</span></p>
+              <p class="price">
+                <span class="value">310</span>
+                <span class="weight">/кг</span>
+              </p>
               <p class="description"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
               <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
             </li>
             <li class="ice-cream-card best-offers">
               <img class="ice-cream-img" src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <p class="price"><span class="value">380</span><span class="weight">/кг</span></p>
+              <p class="price">
+                <span class="value">380</span>
+                <span class="weight">/кг</span>
+              </p>
               <p class="description"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
               <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
             </li>
             <li class="ice-cream-card best-offers">
               <img class="ice-cream-img" src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="price"><span class="value">355</span><span class="weight">/кг</span></p>
+              <p class="price">
+                <span class="value">355</span>
+                <span class="weight">/кг</span>
+              </p>
               <p class="description"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
               <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
             </li>
             <li class="ice-cream-card best-offers">
               <img class="ice-cream-img" src="img/cream-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="price"><span class="value">415</span><span class="weight">/кг</span></p>
+              <p class="price">
+                <span class="value">415</span>
+                <span class="weight">/кг</span>
+              </p>
               <p class="description"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
               <button type="button" class="button fast-view" name="fast-view"> Быстрый просмотр</button>
             </li>
@@ -283,62 +295,7 @@
         <button class="modal-close" type="button">Закрыть</button>
       </section>
     </div>
-    <script>
-      var link = document.querySelector(".callback-form-button");
-      var popup = document.querySelector(".modal-callback");
-      var mask = document.querySelector(".modal-mask");
-      var close = popup.querySelector(".modal-close");
-
-      var form = popup.querySelector("form");
-      var name = popup.querySelector("[name=callback-name]");
-      var email = popup.querySelector("[name=callback-email]");
-      var message = popup.querySelector("[name=callnack-message]");
-
-      var storageName = localStorage.getItem("name");
-      var storageEmail = localStorage.getItem("email");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("show-modal");
-        mask.classList.add("visible");
-
-        if (storageName && storageEmail) {
-          name.value = storageName;
-          email.value = storageEmail;
-        }
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("show-modal");
-        mask.classList.remove("visible");
-        popup.classList.remove("error-modal");
-      });
-
-      form.addEventListener("submit", function (evt) {
-        evt.preventDefault();
-        if (!name.value || !email.value || !message.value) {
-          evt.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("error-modal");
-        }
-        else {
-          localStorage.setItem("name", name.value);
-          localStorage.setItem("email", email.value);
-        }
-      });
-
-      window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        if (popup.classList.contains("show-modal")) {
-          popup.classList.remove("show-modal");
-          popup.classList.remove("error-modal");
-          mask.classList.remove("visible");
-        }
-      }
-    });
-    </script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

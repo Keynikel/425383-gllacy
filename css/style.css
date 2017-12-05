@@ -12,10 +12,7 @@ a{
   text-decoration: none;
 }
 
-::-webkit-input-placeholder {color:#999999;}
-::-moz-placeholder          {color:#999999;}
-:-moz-placeholder           {color:#999999;}
-:-ms-input-placeholder      {color:#999999;}
+
 
 .visible-hidden {
   position: absolute;
@@ -290,7 +287,6 @@ a{
 }
 
 .search-field input{
-
   width: 300px;
   padding: 9px;
   border: 1px solid #d3d3d3;
@@ -300,7 +296,10 @@ a{
   background-color: #ffffff;
   color: #5a5a5a;
 
-
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .search-button:hover path,
@@ -400,7 +399,6 @@ a{
 }
 
 .login-form input{
-
   width: 212px;
   padding: 12px;
 
@@ -410,6 +408,11 @@ a{
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .login-form input:focus{
@@ -1032,6 +1035,11 @@ a{
   border-radius: 5px;
   padding: 10px 13px;
   width: 341px;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .subscribe-form input[type="email"]:focus{
@@ -1258,6 +1266,11 @@ a.bold-href{
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .modal-search input:focus,
@@ -1270,6 +1283,11 @@ a.bold-href{
 .modal-callback input[type="text"],
 .modal-callback input[type="email"]{
   width: 265px;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .modal-callback textarea{
@@ -1354,6 +1372,11 @@ a.login-form-sin-up:focus{
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .filters select{
@@ -1428,6 +1451,11 @@ select {
 
   background: none;
   border: none;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .price-controls .min-price,
@@ -1799,7 +1827,7 @@ select {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding:0;
   list-style: none;
@@ -2022,6 +2050,11 @@ select {
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .modal-search input:focus,
@@ -2034,12 +2067,22 @@ select {
 .modal-callback input[type="text"],
 .modal-callback input[type="email"]{
   width: 265px;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .modal-callback textarea{
   margin-bottom: 25px;
   width: 406px;
   resize: none;
+
+  ::-webkit-input-placeholder {color:#999999;}
+  ::-moz-placeholder          {color:#999999;}
+  :-moz-placeholder           {color:#999999;}
+  :-ms-input-placeholder      {color:#999999;}
 }
 
 .button.callback-submit{
