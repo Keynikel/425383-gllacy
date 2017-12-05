@@ -265,21 +265,42 @@
         </div>
       </footer>
     </div>
-    <section class="modal modal-callback visible-hidden">
-      <h2>Мы обязательно вам ответим!</h2>
-      <form class="callback" name="callback" method="post" action="https://echo.htmlacademy.ru">
-        <p class="callback-item">
-          <label for="callback-name" class="visible-hidden">Как вас зовут?</label>
-          <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?">
-        </p>
-        <p class="callback-item">
-          <label for="callback-email" class="visible-hidden"> Ваша почта для ответа?</label>
-          <input type="email" name="callback-email" id="callback-email" placeholder="Ваша почта для ответа?">
-        </p>
-        <textarea name="callnack-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="button callback-submit" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
+    <div class="modal-mask">
+      <section class="modal modal-callback">
+        <h2>Мы обязательно вам ответим!</h2>
+        <form class="callback" name="callback" method="post" action="https://echo.htmlacademy.ru">
+          <p class="callback-item">
+            <label for="callback-name" class="visible-hidden">Как вас зовут?</label>
+            <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?">
+          </p>
+          <p class="callback-item">
+            <label for="callback-email" class="visible-hidden"> Ваша почта для ответа?</label>
+            <input type="email" name="callback-email" id="callback-email" placeholder="Ваша почта для ответа?">
+          </p>
+          <textarea name="callnack-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="button callback-submit" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+    </div>
+    <script>
+      var link = document.querySelector(".callback-form-button");
+      var popup = document.querySelector(".modal-callback");
+      var mask = document.querySelector(".modal-mask");
+      var close = popup.querySelector(".modal-close");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("visible");
+        mask.classList.add("visible");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("visible");
+        mask.classList.remove("visible");
+      });
+    </script>
+
   </body>
 </html>
