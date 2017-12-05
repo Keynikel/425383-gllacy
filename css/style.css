@@ -482,16 +482,15 @@ a{
   top: 45px;
   z-index: 1;
 
-  display: block;
+  display: none;
   margin: 0;
   padding: 0;
-  width: 510px;
   padding: 10px 15px;
+  width: 510px;
 
   border-radius: 5px;
 
   list-style: none;
-  color: #323232;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -499,23 +498,25 @@ a{
   background-color: #f8f7f4;
 }
 
+.cart-content>li{
+  display: flex;
+  flex-direction: column;
+
+}
+
 .сart-table{
   margin: 0;
   padding: 0;
 
-  width: 500px;
+  width: 520px;
   min-height: 107px;
 
   list-style: none;
 }
 
-.cart-item a{
-  width: 27px;
-}
-
 .cart-item{
   position: relative;
-  min-height: 52px;
+  min-height: 51px;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -524,13 +525,98 @@ a{
   align-items: center;
 }
 
+.last-cart-item{
+
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cacac7;
+}
+
+.last-cart-item .cart-item-title{
+  align-self: flex-end;
+}
+
+.delete-cart-item{
+  position: absolute;
+  left: -2px;
+  top: 25px;
+
+  width: 9px;
+  height: 9px;
+
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.delete-cart-item::before,
+.delete-cart-item::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 14px;
+  height: 1px;
+  background-color: #231f20;
+}
+
+.delete-cart-item::before {
+  transform: rotate(45deg);
+}
+
+.delete-cart-item::after {
+  transform: rotate(-45deg);
+}
+
 .cart-item-img{
   margin-right: 14px;
+  margin-left: 25px;
+}
+
+.cart-item-title{
+  width: 217px;
 }
 
 .cart-item-title,
 .cart-item-cost{
   margin-right: 30px;
+}
+
+.cart-item-cost b{
+  font-size: 13px;
+  line-height: 16px;
+  color: #999999;
+  font-weight: 500;
+}
+
+.cart-cost{
+  min-height: 47px;
+}
+
+.cart-cost span{
+  margin-right: 14px;
+  margin-left: auto;
+
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.cart-order-button{
+  align-self: flex-end;
+
+  padding: 10px 15px;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 /* конец меню */
@@ -1870,6 +1956,8 @@ select {
 
   border-radius: 15px;
 }
+
+
 
 .modal-close {
   position: absolute;
