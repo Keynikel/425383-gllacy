@@ -1950,7 +1950,6 @@ select {
 .modal-callback {
   top: 340px;
   left: 50%;
-  z-index: 30;
   margin-left: -235px;
 
   width: 425px;
@@ -2050,6 +2049,7 @@ select {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 30;
 
   display: none;
   width: 100%;
