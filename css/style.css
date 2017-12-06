@@ -205,7 +205,7 @@ a{
 .login-button,
 .cart-button{
   padding: 8px 35px;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -322,6 +322,10 @@ a{
   background-position: 0 0;
 }
 
+.empty-cart .cart-button{
+  padding-right: 33px;
+}
+
 .fill-cart .cart-button::before{
   background-image: url("../img/cart-red.svg");
   background-repeat: no-repeat;
@@ -387,6 +391,7 @@ a{
 
 .login-form-forgot,
 .login-form-sin-up{
+  display: block;
   font-size: 13px;
   line-height: 24px;
   color: #323232;
@@ -412,7 +417,7 @@ a{
 
 .links{
   margin: 0;
-  margin-left: 18px;
+  margin-left: 17px;
 }
 
 .button.login{
@@ -887,13 +892,17 @@ a{
   justify-content: space-between;
 }
 
-.useful-information .news,
-.useful-information .subscribe-form{
-  width: 49%;
+.news,
+.subscribe-form{
+  width: 560px;
   border-radius: 15px;
 }
 
-.useful-information article{
+.subscribe-form{
+  width: 549px;
+}
+
+.news{
   color: #323232;
   background-color: #ffffff;
   background-image: url("../img/news-bg.jpg");
@@ -902,7 +911,7 @@ a{
   background-size: auto;
 }
 
-.useful-information h3{
+.news h3{
   margin: 0;
   margin-top: 23px;
   margin-left: 20px;
@@ -910,9 +919,9 @@ a{
   line-height: 22px;
 }
 
-.useful-information a{
+.more-information{
   display: block;
-  width: 50%;
+  width: 52%;
   margin-left: 20px;
   margin-top: 4px;
   font-size: 24px;
@@ -1030,10 +1039,9 @@ a{
 /* footer */
 
 .main-footer{
-  min-height: 107px;
   width: 1146px;
   margin: 0 auto;
-  padding: 0px 27px;
+  padding: 28px 27px 27px 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1201,8 +1209,8 @@ a.bold-href{
   padding: 10px 25px;
 }
 
-a.login-form-forgot:focus,
-a.login-form-sin-up:focus{
+.login-form-forgot:focus,
+.login-form-sin-up:focus{
   outline: none;
 }
 
@@ -1439,7 +1447,7 @@ select{
 .radio-filter + label::before{
   content: "";
   position: absolute;
-  left: -32px;
+  left: -25px;
   top: 0;
   width: 16px;
   height: 16px;
@@ -1456,7 +1464,7 @@ select{
   content: "";
   position: absolute;
   top: 7px;
-  left: -25px;
+  left: -18px;
   width: 8px;
   height: 8px;
   background-color: rgba(255,255,255,0.7);
@@ -1470,8 +1478,13 @@ select{
 
 /* наполнители */
 
+fieldset.fillers{
+  margin-right: 10px;
+}
+
 .checklist{
   padding-right: 18px;
+  padding-left: 30px;
 }
 
 .checkbox-filter + label::before{
@@ -1538,9 +1551,9 @@ select{
 
 .pagination-list{
   margin: 0;
-  margin-top: 9px;
   padding: 0;
-  padding-bottom: 36px;
+  padding-bottom: 31px;
+  margin-right: -15px;
   height: 55px;
   display: flex;
   justify-content: flex-end;
@@ -1690,13 +1703,16 @@ select{
 }
 
 .catalog{
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding:0;
   list-style: none;
+}
+
+.ice-cream-list{
+  margin-bottom: 14px;
 }
 
 /* карточки товара */
