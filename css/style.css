@@ -280,6 +280,16 @@ a{
   :-ms-input-placeholder     {color:#999999;}
 }
 
+.search-field input:hover{
+  padding: 8px;
+  border: 2px solid rgba(154,154,154,0.52);
+}
+
+.search-field input:focus{
+  padding: 8px;
+  border: 2px solid rgba(46,136,228,0.52);
+}
+
 .search-button:hover path,
 .search-button:focus path{
   fill: #000;
@@ -398,7 +408,12 @@ a{
 }
 
 .login-form input:focus{
-  border: 2px solid #c7c6c5;
+  border: 2px solid  rgba(46,136,228,0.52);
+  padding: 11px;
+}
+
+.login-form input:hover{
+  border: 2px solid rgba(154,154,154,0.52);
   padding: 11px;
 }
 
@@ -477,7 +492,6 @@ a{
 .cart-content>li{
   display: flex;
   flex-direction: column;
-
 }
 
 .сart-table{
@@ -617,10 +631,8 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin: 0;
   padding: 0;
-
   font-size: 14px;
   line-height: 14px;
 }
@@ -989,7 +1001,12 @@ a{
 }
 
 .subscribe-form input[type="email"]:focus{
-  border: 2px solid #8fbdec;
+  border: 2px solid rgba(46,136,228,0.52);
+  padding: 9px 12px;
+}
+
+.subscribe-form input[type="email"]:hover{
+  border: 2px solid rgba(154,154,154,0.52);
   padding: 9px 12px;
 }
 
@@ -1020,7 +1037,7 @@ a{
   position: absolute;
   top: 62px;
   right: 28px;
-  width: 251px;
+  width: 252px;
   padding-top: 27px;
   padding-left: 25px;
   padding-right: 25px;
@@ -1116,17 +1133,18 @@ a{
   border-radius: 50%;
 }
 
-.social-button path{
+.icon-path{
+  fill: #ffffff;
   opacity: 0.7;
 }
 
-.social-button:hover path,
-.social-button:focus path{
+.social-button:hover .icon-path,
+.social-button:focus .icon-path{
   opacity: 1;
 }
 
-.social-button:active path{
-  opacity: 0.6;
+.social-button:active .icon-path{
+  fill: #ffffff;
 }
 
 .footer-social a,
@@ -1202,7 +1220,6 @@ a.bold-href{
   :-ms-input-placeholder     {color:#999999;}
 }
 
-.modal-search input:focus,
 .modal-callback input:focus,
 .modal-callback textarea:focus{
   border: 2px solid #c7c6c5;
@@ -1243,18 +1260,14 @@ a.bold-href{
 .breadcrumbs{
   margin: 0;
   margin-top: 18px;
-
   padding: 0;
   display: flex;
-
   list-style: none;
 }
 
 .crumb{
   position: relative;
-
   padding-right: 7px;
-
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -1287,22 +1300,30 @@ a.bold-href{
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-
   ::-webkit-input-placeholder{color:#999999;}
   ::-moz-placeholder         {color:#999999;}
   :-moz-placeholder          {color:#999999;}
   :-ms-input-placeholder     {color:#999999;}
 }
 
-.filters select{
+.filters-sorting{
+  padding-right: 25px;
   color: #ffffff;
   background-color: transparent;
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.filters select:focus,
-.filters select:hover{
+.filters-sorting:focus,
+.filters-sorting:hover{
   color: #323232;
+}
+
+.filters-sorting:focus + .icon-down path,
+.filters-sorting:hover + .icon-down path{
+  fill: #323232;
 }
 
 .filters-background{
@@ -1318,23 +1339,13 @@ a.bold-href{
   padding: 7px 8px 7px 15px;
 }
 
-.select:after{
-  content: url("../img/select-arrow.svg");
+.icon-down{
   position: absolute;
-  right: 8px;
-  top: 6px;
+  right: 12px;
+  top: 12px;
   z-index: 1;
-  width: 19px;
-  height: 15px;
   pointer-events: none;
   box-sizing: border-box;
-}
-
-select{
-  padding-right: 25px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 /* ползунки */
@@ -1360,10 +1371,6 @@ select{
   line-height: 16px;
   background: none;
   border: none;
-  ::-webkit-input-placeholder{color:#999999;}
-  ::-moz-placeholder         {color:#999999;}
-  :-moz-placeholder          {color:#999999;}
-  :-ms-input-placeholder     {color:#999999;}
 }
 
 .price-controls .min-price,
@@ -1408,10 +1415,10 @@ select{
 }
 
 .bar{
-    width: 103px;
-    height: 4px;
-    background: #fff;
-    margin-left: 25px;
+  width: 103px;
+  height: 4px;
+  background: #fff;
+  margin-left: 25px;
 }
 
 .range-toggle{
@@ -1541,7 +1548,6 @@ select{
 .checkbox-filter:checked:focus + label::after{
   opacity: 1;
 }
-
 /* end наполнители */
 
 /* кнопка применить */
@@ -1568,7 +1574,6 @@ select{
   border: none;
   box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
-
 /* end применить*/
 
 .pagination-list{
@@ -1615,7 +1620,6 @@ select{
 }
 
 /* сетки */
-
 .advantages-list{
   margin: 0;
   padding: 0;
@@ -1686,7 +1690,6 @@ select{
 .footer-copyright p{
   margin: 0;
   padding: 0;
-
   font-size: 12px;
   line-height: 18px;
 
@@ -1937,7 +1940,14 @@ select{
 .modal-search input:focus,
 .modal-callback input:focus,
 .modal-callback textarea:focus{
-  border: 2px solid #c7c6c5;
+  border: 2px solid rgba(46,136,228,0.52);
+  padding: 8px;
+}
+
+.modal-search input:hover,
+.modal-callback input:hover,
+.modal-callback textarea:hover{
+  border: 2px solid rgba(154,154,154,0.52);
   padding: 8px;
 }
 
