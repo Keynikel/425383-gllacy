@@ -58,8 +58,9 @@ a{
 
 .main-header-logo{
   align-self: flex-end;
-  margin-right: 6px;
+  margin-right: 10px;
   margin-left: 27px;
+  margin-bottom: 2px;
   width: 180px;
 }
 
@@ -71,6 +72,7 @@ a{
 
 .navigation-container{
   width: 100%;
+  margin-bottom: 6px;
   display: flex;
   justify-content: space-between;
 }
@@ -78,6 +80,7 @@ a{
 /* стили главного меню */
 .site-navigation{
   margin: 0;
+  margin-bottom: -3px;
   padding: 0;
   width: 385px;
   display: flex;
@@ -85,7 +88,7 @@ a{
 }
 
 .navigation-item{
-  padding-top: 12px;
+  padding-top: 16px;
   padding-bottom: 12px;
 }
 
@@ -94,7 +97,7 @@ a{
 }
 
 .navigation-item>a{
-  padding: 7px 15px;
+  padding: 7px 14px;
   color: #ffffff;
   font-weight: bold;
 }
@@ -111,13 +114,14 @@ a{
 .navigation-item>a:hover,
 .navigation-item>a:focus{
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   color: #333333;
   background-color: #f7f6f3;
 }
 
 .navigation-item>a:active{
-  box-card: inset 0px 2px 1px 0px #6e6f6f;
+  background-color: rgba(234, 234, 234, 1);
+  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
 .catalog-item{
@@ -125,18 +129,18 @@ a{
 }
 
 .catalog-item:hover .subnavigation{
-    display: block;
+  display: block;
 }
 
 /* стили подменю главного меню */
 
 .subnavigation{
   position: absolute;
-  top: 40px;
-  left: -2px;
+  top: 42px;
+  left: -7px;
   z-index: 1;
   display: none;
-  min-width: 142px;
+  min-width: 143px;
   margin: 0;
   padding: 0;
   border-radius: 5px;
@@ -165,6 +169,7 @@ a{
 }
 
 .subnavigation-item .active{
+  color: #ffffff;
   background-color: rgb(208, 112, 88);
 }
 
@@ -179,7 +184,7 @@ a{
 }
 
 .subnavigation li:last-child{
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* стили пользовательского меню */
@@ -224,8 +229,9 @@ a{
 
 .search-panel{
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 3px;
+  padding-top: 16px;
+  padding-bottom: 12px;
 }
 
 .search-panel a{
@@ -281,8 +287,8 @@ a{
 
 .login{
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 12px;
 }
 
 .login-button{
@@ -327,6 +333,8 @@ a{
 }
 
 .fill-cart .cart-button::before{
+  padding-top: 16px;
+  padding-bottom: 12px;
   background-image: url("../img/cart-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -340,6 +348,11 @@ a{
 .cart-button:focus::before,
 .cart-button:hover::before{
   background-image: url("../img/cart-black.svg");
+}
+
+.fill-cart>a{
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .fill-cart a:focus::before,
@@ -485,6 +498,11 @@ a{
   align-items: center;
 }
 
+.cart-item a{
+  display: flex;
+  color: #323232;
+}
+
 .last-cart-item{
   padding-bottom: 17px;
   border-bottom: 1px solid #cacac7;
@@ -531,6 +549,7 @@ a{
 }
 
 .cart-item-title{
+  display: block;
   width: 217px;
 }
 
@@ -630,7 +649,7 @@ a{
 }
 
 .no-breadcrumbs .main-contacts{
-  padding-top: 5px;
+  padding-top: 1px;
 }
 
 .has-breadcrumbs .main-contacts{
@@ -644,7 +663,7 @@ a{
 }
 
 .main-contacts p:first-of-type{
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   padding-left: 10px;
 }
 
@@ -655,7 +674,7 @@ a{
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  padding-top: 275px;
+  padding-top: 276px;
   text-align: center;
   color: #ffffff;
 }
@@ -669,7 +688,7 @@ a{
 .slide-title{
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -697,6 +716,10 @@ a{
 
 .slide{
   display: none;
+}
+
+.site-wrapper label:hover{
+  background-color: rgba(255,255,255,0.4);
 }
 
 #product-1:checked ~ .site-wrapper #slide1,
@@ -741,16 +764,12 @@ a{
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  background: #f26843;
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 50px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #f26843;
+  background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 30px;
+  box-shadow: 0 1px 1px rgba(172, 16, 0, 1);
   border: none;
   cursor: pointer;
-}
-
-.button:focus{
-  outline: none;
 }
 
 .button:hover,
@@ -775,7 +794,7 @@ a{
 
 .spetial-offer{
   padding: 0;
-  padding-top: 14px;
+  padding-top: 12px;
   display: flex;
   justify-content: space-between;
   font-weight: 700;
@@ -785,7 +804,7 @@ a{
   display: flex;
   flex-direction: column;
   width: 560px;
-  height: 230px;
+  height: 228px;
   border-radius: 15px;
   font-size: 18px;
   line-height: 22px;
@@ -830,11 +849,15 @@ a{
   padding: 12px 23px;
 }
 
+.want-chocolate .button{
+  padding: 11px 21px;
+}
+
 /* hits*/
 
 .hits{
   padding-top: 39px;
-  height: 360px;
+  min-height: 363px;
 }
 
 .description a{
@@ -849,16 +872,14 @@ a{
   border-bottom-color: #ffbc9e;
 }
 
-.description a:focus{
-  outline: none;
-}
 /* end hits block*/
 
 /* advantages block*/
 
 .advantages{
-  height: 305px;
+  min-height: 256px;
   margin: 0px;
+  padding: 24px 20px;
   border-radius: 15px;
   color: #323232;
   background-color: #f1e8d5;
@@ -871,8 +892,6 @@ a{
 .advantages-lead{
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-top: 24px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -903,6 +922,7 @@ a{
 }
 
 .news{
+  margin-right: auto;
   color: #323232;
   background-color: #ffffff;
   background-image: url("../img/news-bg.jpg");
@@ -931,10 +951,6 @@ a{
   text-decoration: underline;
 }
 
-.useful-information a:focus{
-  outline: none;
-}
-
 .useful-information a:hover,
 .useful-information a:focus,
 .useful-information a:active{
@@ -955,7 +971,7 @@ a{
 
 .subscribe-form form{
   margin-left: 21px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .subscribe-form input[type="email"]{
@@ -965,7 +981,7 @@ a{
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   padding: 10px 13px;
-  width: 341px;
+  width: 339px;
   ::-webkit-input-placeholder{color:#999999;}
   ::-moz-placeholder         {color:#999999;}
   :-moz-placeholder          {color:#999999;}
@@ -980,13 +996,14 @@ a{
 .subscribe-button{
   font-size: 18px;
   line-height: 24px;
-  padding: 9px 20px;
-  margin-left: 5px;
+  padding: 9px 18px;
+  margin-left: 7px;
 }
 
 .map{
   height: 425px;
   margin: 0 -27px;
+  margin-bottom: 2px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1003,9 +1020,10 @@ a{
   position: absolute;
   top: 62px;
   right: 28px;
-  width: 276px;
-  padding-top: 29px;
+  width: 251px;
+  padding-top: 27px;
   padding-left: 25px;
+  padding-right: 25px;
   border-radius: 15px;
   font-size: 14px;
   line-height: 20px;
@@ -1019,17 +1037,19 @@ a{
 
 .map-legend-contacts{
   margin: 0;
-  margin-top: 18px;
+  margin-top: 17px;
   padding: 0;
 }
 
 .map-legend strong{
+  display: block;
+  margin-top: 4px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .callback-form-button{
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 32px;
   padding: 10px 28px;
   font-size: 18px;
@@ -1209,11 +1229,6 @@ a.bold-href{
   padding: 10px 25px;
 }
 
-.login-form-forgot:focus,
-.login-form-sin-up:focus{
-  outline: none;
-}
-
 .modal-callback h2{
   margin: 0;
   margin-bottom: 25px;
@@ -1238,7 +1253,7 @@ a.bold-href{
 .crumb{
   position: relative;
 
-  padding-right: 8px;
+  padding-right: 7px;
 
   font-size: 14px;
   line-height: 16px;
@@ -1261,7 +1276,7 @@ a.bold-href{
 }
 
 .filters legend{
-  margin-left: 18px;
+  margin-left: 15px;
   margin-bottom: 7px;
   font-size: 14px;
   line-height: 16px;
@@ -1300,6 +1315,7 @@ a.bold-href{
   position: relative;
   display: inline-block;
   vertical-align: top;
+  padding: 7px 8px 7px 15px;
 }
 
 .select:after{
@@ -1354,14 +1370,15 @@ select{
 .price-controls .max-price{
   width: 60px;
   margin-right: 6px;
+  margin-top: -2px;
 }
 
 .price-controls::after{
   content: "";
   position: absolute;
-  top: 50%;
-  left: 45%;
-  width: 8px;
+  top: 45%;
+  left: 46%;
+  width: 7px;
   height: 2px;
   background: #ffffff;
   transform: translate(-50%, -50%);
@@ -1373,6 +1390,7 @@ select{
 }
 
 .ranges .filters-background{
+  width: 195px;
   height: 20px;
 }
 
@@ -1433,7 +1451,7 @@ select{
 .filter-option{
   display: inline-block;
   vertical-align: top;
-  padding-left: 32px;
+  padding-left: 33px;
   padding-right: 14px;
 }
 
@@ -1447,7 +1465,7 @@ select{
 .radio-filter + label::before{
   content: "";
   position: absolute;
-  left: -25px;
+  left: -33px;
   top: 0;
   width: 16px;
   height: 16px;
@@ -1464,7 +1482,7 @@ select{
   content: "";
   position: absolute;
   top: 7px;
-  left: -18px;
+  left: -26px;
   width: 8px;
   height: 8px;
   background-color: rgba(255,255,255,0.7);
@@ -1478,19 +1496,23 @@ select{
 
 /* наполнители */
 
-fieldset.fillers{
-  margin-right: 10px;
+.fillers{
+  margin-right: 15px;
+}
+
+.fillers .filters-background{
+  padding-right: 0px;
 }
 
 .checklist{
   padding-right: 18px;
-  padding-left: 30px;
+  padding-left: 33px;
 }
 
 .checkbox-filter + label::before{
   content: "";
   position: absolute;
-  left: -25px;
+  left: -32px;
   top: 0;
   width: 16px;
   height: 16px;
@@ -1506,7 +1528,7 @@ fieldset.fillers{
   content: "";
   position: absolute;
   top: -2px;
-  left: -28px;
+  left: -33px;
   width: 24px;
   height: 24px;
   background-image: url("../img/checkbox-on.svg");
@@ -1554,7 +1576,7 @@ fieldset.fillers{
   padding: 0;
   padding-bottom: 31px;
   margin-right: -15px;
-  height: 55px;
+  height: 56px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -1572,10 +1594,6 @@ fieldset.fillers{
 .active a{
   color: #323232;
   background-color: rgb(255, 255, 255);
-}
-
-.pagination-item a:focus{
-  outline: none;
 }
 
 .pagination-item a:hover,
@@ -1609,20 +1627,26 @@ fieldset.fillers{
 .advantages-list li{
   position: relative;
   width: 50%;
+  margin-bottom: 2px;
 }
 
 .advantages-list p{
   margin: 0;
   margin-top: 20px;
-  padding-left: 77px;
+  padding-left: 56px;
   padding-right: 10px;
+}
+
+.second p,
+.fourth p{
+  padding-left: 70px;
 }
 
 .advantages-list li::before{
   content: "";
   position: absolute;
   top: 8px;
-  left: 20px;
+  left: 0px;
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;
@@ -1634,6 +1658,7 @@ fieldset.fillers{
 }
 
 .advantages-list .second::before{
+  left: 12px;
   background-image: url("../img/cow.svg");
 }
 
@@ -1642,6 +1667,7 @@ fieldset.fillers{
 }
 
 .advantages-list .fourth::before{
+  left: 12px;
   background-image: url("../img/thermometer.svg");
 }
 
@@ -1669,11 +1695,8 @@ fieldset.fillers{
 .main-contacts{
   width: 215px;
   height: 100%;
+  margin-right: -25px;
   text-align: center;
-}
-
-.no-breadcrumbs .main-contacts{
-  padding-top: 5px;
 }
 
 .filters-first-row,
@@ -1700,6 +1723,10 @@ fieldset.fillers{
 
 .fat-level .legend{
   margin-left: 14px;
+}
+
+.fat-level .filters-background{
+  padding-right: 0px;
 }
 
 .catalog{
@@ -1757,7 +1784,7 @@ fieldset.fillers{
 .value::after{
   content: url(../img/rub.svg);
   position: absolute;
-  top: 2px;
+  top: 4px;
   right: 40px;
   width: 31px;
   height: 36px;
