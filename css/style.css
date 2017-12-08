@@ -308,8 +308,8 @@ a{
 
 
 .search-field input::-webkit-input-placeholder,
-.search-field input::-moz-placeholder,        
-.search-field input:-moz-placeholder,          
+.search-field input::-moz-placeholder,
+.search-field input:-moz-placeholder,
 .search-field input:-ms-input-placeholder{
     color:#999999;
 }
@@ -440,8 +440,8 @@ a{
 }
 
 .login-form input::-webkit-input-placeholder,
-.login-form input::-moz-placeholder,        
-.login-form input:-moz-placeholder,          
+.login-form input::-moz-placeholder,
+.login-form input:-moz-placeholder,
 .login-form input:-ms-input-placeholder{
     color:#999999;
 }
@@ -691,8 +691,8 @@ a{
 /* пользовательская информация и слйдер*/
 
 .common-information{
-  height: 565px;
   margin-top: -8px;
+  margin-bottom: 30px;
 }
 
 .user-info{
@@ -908,7 +908,8 @@ a{
       -ms-flex-direction: column;
           flex-direction: column;
   width: 560px;
-  height: 228px;
+  min-height: 206px;
+  padding-bottom: 23px;
   border-radius: 15px;
   font-size: 18px;
   line-height: 22px;
@@ -1011,7 +1012,7 @@ a{
 .useful-information{
   padding: 0;
   margin: 40px 0px;
-  height: 220px;
+  min-height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1023,11 +1024,13 @@ a{
 .news,
 .subscribe-form{
   width: 560px;
+  padding-bottom: 22px;
   border-radius: 15px;
 }
 
 .subscribe-form{
   width: 549px;
+  padding-bottom: 22px
 }
 
 .news{
@@ -1097,8 +1100,8 @@ a{
 }
 
 .subscribe-form input::-webkit-input-placeholder,
-.subscribe-form input::-moz-placeholder,        
-.subscribe-form input:-moz-placeholder,          
+.subscribe-form input::-moz-placeholder,
+.subscribe-form input:-moz-placeholder,
 .subscribe-form input:-ms-input-placeholder{
     color:#999999;
 }
@@ -1262,6 +1265,15 @@ a{
   border-radius: 50%;
 }
 
+.social-button:hover,
+.social-button:focus{
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.social-button:active{
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
 .icon-path{
   fill: #ffffff;
   opacity: 0.7;
@@ -1351,15 +1363,15 @@ a.bold-href{
 }
 
 .modal-callback input::-webkit-input-placeholder,
-.modal-callback input::-moz-placeholder,        
-.modal-callback input:-moz-placeholder,          
+.modal-callback input::-moz-placeholder,
+.modal-callback input:-moz-placeholder,
 .modal-callback input:-ms-input-placeholder{
     color:#999999;
 }
 
 .modal-callback textarea::-webkit-input-placeholder,
-.modal-callback textarea::-moz-placeholder,        
-.modal-callback textarea:-moz-placeholder,          
+.modal-callback textarea::-moz-placeholder,
+.modal-callback textarea:-moz-placeholder,
 .modal-callback textarea:-ms-input-placeholder{
     color:#999999;
 }
@@ -1447,8 +1459,8 @@ a.bold-href{
 }
 
 .filters input::-webkit-input-placeholder,
-.filters input::-moz-placeholder,        
-.filters input:-moz-placeholder,          
+.filters input::-moz-placeholder,
+.filters input:-moz-placeholder,
 .filters input:-ms-input-placeholder{
     color:#999999;
 }
@@ -1772,6 +1784,11 @@ a.bold-href{
 .pagination-item a:hover,
 .pagination-item a:focus{
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.pagination-item a:active{
+  background-color: rgba(255, 255, 255, 1);
+  color: #323232;
 }
 
 .pagination-item{
@@ -2140,15 +2157,15 @@ a.bold-href{
 }
 
 .modal-callback input::-webkit-input-placeholder,
-.modal-callback input::-moz-placeholder,        
-.modal-callback input:-moz-placeholder,          
+.modal-callback input::-moz-placeholder,
+.modal-callback input:-moz-placeholder,
 .modal-callback input:-ms-input-placeholder{
     color:#999999;
   }
 
 .modal-callback textarea::-webkit-input-placeholder,
-.modal-callback textarea::-moz-placeholder,        
-.modal-callback textarea:-moz-placeholder,          
+.modal-callback textarea::-moz-placeholder,
+.modal-callback textarea:-moz-placeholder,
 .modal-callback textarea:-ms-input-placeholder{
     color:#999999;
   }
