@@ -1022,7 +1022,7 @@ a{
 }
 
 .map{
-  height: 425px;
+  height: 427px;
   margin: 0 -27px;
   margin-bottom: 2px;
   display: flex;
@@ -1082,7 +1082,7 @@ a{
 .main-footer{
   width: 1146px;
   margin: 0 auto;
-  padding: 28px 27px 27px 27px;
+  padding: 28px 0px 27px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
