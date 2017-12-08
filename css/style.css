@@ -281,7 +281,7 @@ a{
   border-radius: 5px;
   font: inherit;
   background-color: #ffffff;
-  color: #5a5a5a;
+  color: #323232;
   ::-webkit-input-placeholder{color:#999999;}
   ::-moz-placeholder         {color:#999999;}
   :-moz-placeholder          {color:#999999;}
@@ -407,7 +407,7 @@ a{
   width: 212px;
   padding: 12px;
   font: inherit;
-  color: #5a5a5a;
+  color: #323232;
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
@@ -983,7 +983,7 @@ a{
 }
 
 .subscribe-form{
-  color: #5a5a5a;
+  color: #323232;
   background-color: #f8f7f4;
   border: 5px solid #fe9e90;
   border-image: url("../img/letter-bg.svg") 5 round round;
@@ -991,6 +991,7 @@ a{
 
 .subscribe-form p{
   margin: 30px 20px;
+  color: #5a5a5a;
 }
 
 .subscribe-form form{
@@ -1000,7 +1001,7 @@ a{
 
 .subscribe-form input[type="email"]{
   font: inherit;
-  color: #5a5a5a;
+  color: #323232;
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
@@ -1225,7 +1226,7 @@ a.bold-href{
 .modal-callback textarea{
   padding: 9px;
   font: inherit;
-  color: #5a5a5a;
+  color: #323232;
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
@@ -1957,7 +1958,7 @@ a.bold-href{
 .modal-callback textarea{
   padding: 9px;
   font: inherit;
-  color: #5a5a5a;
+  color: #323232;
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
