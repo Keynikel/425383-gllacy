@@ -77,6 +77,10 @@ a{
   justify-content: space-between;
 }
 
+.catalog-navigation{
+  margin-bottom: 4px;
+}
+
 /* стили главного меню */
 .site-navigation{
   margin: 0;
@@ -136,7 +140,7 @@ a{
 
 .subnavigation{
   position: absolute;
-  top: 46px;
+  top: 45px;
   left: -7px;
   z-index: 1;
   display: none;
@@ -806,7 +810,7 @@ a{
 
 .spetial-offer{
   padding: 0;
-  padding-top: 12px;
+  padding-top: 9px;
   display: flex;
   justify-content: space-between;
   font-weight: 700;
@@ -861,7 +865,7 @@ a{
   padding: 12px 23px;
 }
 
-.want-chocolate .button{
+.spetial-offer .want-chocolate{
   padding: 11px 21px;
 }
 
@@ -1764,9 +1768,13 @@ a.bold-href{
 .ice-cream-img{
   width: 267px;
   height: 267px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   border-radius: 50%;
   z-index: 9;
+}
+
+.ice-cream-list .ice-cream-img{
+  margin-bottom: 12px;
 }
 
 .price{
