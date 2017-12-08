@@ -72,7 +72,7 @@ a{
 
 .navigation-container{
   width: 100%;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
 }
@@ -136,7 +136,7 @@ a{
 
 .subnavigation{
   position: absolute;
-  top: 42px;
+  top: 46px;
   left: -7px;
   z-index: 1;
   display: none;
@@ -459,8 +459,8 @@ a{
 /* всплывашка с корзиной*/
 
 .cart{
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 12px;
 }
 
 .fill-cart{
@@ -1138,12 +1138,12 @@ a{
   opacity: 0.7;
 }
 
-.social-button:hover .icon-path,
-.social-button:focus .icon-path{
+.icon-path:hover,
+.icon-path:focus{
   opacity: 1;
 }
 
-.social-button:active .icon-path{
+.icon-path:active{
   fill: #ffffff;
 }
 
@@ -1589,7 +1589,7 @@ a.bold-href{
 }
 
 .pagination-item a{
-  padding: 2px 7px;
+  padding: 3px 8px;
   border-radius: 50%;
   font-size: 16px;
   line-height: 18px;
@@ -1607,7 +1607,11 @@ a.bold-href{
 }
 
 .pagination-item{
-  margin-right: 7px;
+  margin-right: 5px;
+}
+
+.pagination-item:last-of-type{
+  margin-left: 4px;
 }
 
 .prev_page svg{
@@ -1742,7 +1746,7 @@ a.bold-href{
 }
 
 .ice-cream-list{
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 /* карточки товара */
@@ -1751,7 +1755,7 @@ a.bold-href{
   position: relative;
   width: 267px;
   min-height: 324px;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
