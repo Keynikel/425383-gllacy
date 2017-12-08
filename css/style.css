@@ -1237,6 +1237,7 @@ a.bold-href{
 
 .modal-callback input:focus,
 .modal-callback textarea:focus{
+  color: #323232;
   border: 2px solid #c7c6c5;
   padding: 8px;
 }
@@ -1970,7 +1971,7 @@ a.bold-href{
 .modal-callback textarea:focus{
   border: 2px solid rgba(46,136,228,0.52);
   padding: 8px;
-    color: #323232;
+  color: #323232;
 }
 
 .modal-callback input:hover,
