@@ -1374,7 +1374,7 @@ a.bold-href{
 }
 
 .price-controls input{
-  width: 50px;
+  width: 55px;
   margin: 0;
   font-size: 14px;
   line-height: 16px;
@@ -1524,6 +1524,11 @@ a.bold-href{
 .checklist{
   padding-right: 18px;
   padding-left: 33px;
+}
+
+.checklist input,
+.filter-option input{
+  display: none;
 }
 
 .checkbox-filter + label::before{
