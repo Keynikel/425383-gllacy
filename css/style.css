@@ -738,7 +738,7 @@ a{
   display: none;
 }
 
-.site-wrapper label:hover{
+.slider-controls label:hover{
   background-color: rgba(255,255,255,0.4);
 }
 
@@ -1505,7 +1505,8 @@ a.bold-href{
   border-radius: 50%;
 }
 
-.radio-filter:checked:hover + label::after{
+.radio-filter:checked:hover + label::after,
+.radio-filter:checked:focus + label::after{
   background-color: rgba(255,255,255,1);
 }
 /* end жирность*/
