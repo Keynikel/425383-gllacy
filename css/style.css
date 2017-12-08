@@ -29,6 +29,10 @@ a{
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
+.catalog-page{
+  background-image: linear-gradient(to bottom, #9cb0a5 1%, #849d8f 40%);
+}
+
 .site-wrapper::before,
 .site-wrapper::after{
   content: "";
@@ -72,7 +76,7 @@ a{
 
 .navigation-container{
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   display: flex;
   justify-content: space-between;
 }
@@ -665,7 +669,7 @@ a{
 }
 
 .no-breadcrumbs .main-contacts{
-  padding-top: 1px;
+  padding-top: 4px;
 }
 
 .has-breadcrumbs .main-contacts{
@@ -690,7 +694,7 @@ a{
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  padding-top: 276px;
+  padding-top: 275px;
   text-align: center;
   color: #ffffff;
 }
@@ -810,7 +814,7 @@ a{
 
 .spetial-offer{
   padding: 0;
-  padding-top: 9px;
+  padding-top: 13px;
   display: flex;
   justify-content: space-between;
   font-weight: 700;
@@ -861,7 +865,7 @@ a{
 .spetial-offer .button{
   align-self: flex-end;
   margin-right: 22px;
-  margin-top: 43px;
+  margin-top: 45px;
   padding: 12px 23px;
 }
 
@@ -872,7 +876,7 @@ a{
 /* hits*/
 
 .hits{
-  padding-top: 39px;
+  padding-top: 40px;
   min-height: 363px;
 }
 
@@ -987,7 +991,7 @@ a{
 
 .subscribe-form form{
   margin-left: 21px;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .subscribe-form input[type="email"]{
@@ -1019,12 +1023,13 @@ a{
   line-height: 24px;
   padding: 9px 18px;
   margin-left: 7px;
+  margin-top: -1px;
 }
 
 .map{
   height: 427px;
   margin: 0 -27px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1044,7 +1049,7 @@ a{
   width: 252px;
   padding-top: 27px;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 24px;
   border-radius: 15px;
   font-size: 14px;
   line-height: 20px;
@@ -1058,7 +1063,7 @@ a{
 
 .map-legend-contacts{
   margin: 0;
-  margin-top: 17px;
+  margin-top: 16px;
   padding: 0;
 }
 
