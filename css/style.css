@@ -145,7 +145,7 @@ a{
 .subnavigation{
   position: absolute;
   top: 45px;
-  left: -7px;
+  left: -6px;
   z-index: 1;
   display: none;
   min-width: 143px;
