@@ -291,11 +291,13 @@ a{
 .search-field input:hover{
   padding: 8px;
   border: 2px solid rgba(154,154,154,0.52);
+  color: #323232;
 }
 
 .search-field input:focus{
   padding: 8px;
   border: 2px solid rgba(46,136,228,0.52);
+  сolor: #323232;
 }
 
 .search-button:hover path,
@@ -418,11 +420,13 @@ a{
 .login-form input:focus{
   border: 2px solid  rgba(46,136,228,0.52);
   padding: 11px;
+  color: #323232;
 }
 
 .login-form input:hover{
   border: 2px solid rgba(154,154,154,0.52);
   padding: 11px;
+  color: #323232;
 }
 
 .login-form-forgot,
@@ -1011,11 +1015,13 @@ a{
 .subscribe-form input[type="email"]:focus{
   border: 2px solid rgba(46,136,228,0.52);
   padding: 9px 12px;
+  color: #323232;
 }
 
 .subscribe-form input[type="email"]:hover{
   border: 2px solid rgba(154,154,154,0.52);
   padding: 9px 12px;
+  color: #323232;
 }
 
 .subscribe-button{
@@ -1960,18 +1966,18 @@ a.bold-href{
   :-ms-input-placeholder     {color:#999999;}
 }
 
-.modal-search input:focus,
 .modal-callback input:focus,
 .modal-callback textarea:focus{
   border: 2px solid rgba(46,136,228,0.52);
   padding: 8px;
+    color: #323232;
 }
 
-.modal-search input:hover,
 .modal-callback input:hover,
 .modal-callback textarea:hover{
   border: 2px solid rgba(154,154,154,0.52);
   padding: 8px;
+  color: #323232;
 }
 
 .modal-callback input[type="text"],
