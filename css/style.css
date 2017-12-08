@@ -1261,31 +1261,30 @@ a{
   display: block;
   width: 33px;
   height: 33px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
 
-.social-button:hover,
-.social-button:focus{
-  border: 3px solid rgba(255, 255, 255, 0.6);
+.social-button:hover{
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-button:active{
-  border: 3px solid rgba(255, 255, 255, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
-.icon-path{
+.social-button .icon-path{
   fill: #ffffff;
   opacity: 0.7;
 }
 
-.icon-path:hover,
-.icon-path:focus{
+.social-button:hover .icon-path,
+.social-button:focus .icon-path{
   opacity: 1;
 }
 
-.icon-path:active{
-  fill: #ffffff;
+.social-button:active .icon-path{
+  fill: #e6ebe9;
 }
 
 .footer-social a,
